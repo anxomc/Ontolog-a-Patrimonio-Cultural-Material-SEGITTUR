@@ -1,383 +1,598 @@
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix : <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> .
 @prefix mod: <https://w3id.org/mod#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix segittur: <http://www.owl-ontologies.com/segittur#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix tcm: <http://www.owl-ontologies.com/tcm#> .
-@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix segittur: <http://www.owl-ontologies.com/segittur#> .
+@base <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> .
 
-dcterms:created a owl:AnnotationProperty .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> rdf:type owl:Ontology ;
+                                                                        owl:versionIRI <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/0.1.0> ;
+                                                                        dcterms:created "2025-11-10"^^xsd:date ;
+                                                                        dcterms:creator <https://github.com/anxomc> ,
+                                                                                        <https://w3id.org/people#AContributorURI> ;
+                                                                        dcterms:description "Extensión de la ontología de SEGITTUR, caso de: Turismo Cultural Material"@es ;
+                                                                        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                                                        dcterms:title "Ontología de Turismo Cultural Material (Extensión de SEGITTUR)"@es ;
+                                                                        vann:preferredNamespacePrefix "segittur" ,
+                                                                                                      "tcm" ;
+                                                                        vann:preferredNamespaceUri <https://ontologia.segittur.es/turismo/def/core#> ,
+                                                                                                   <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> ;
+                                                                        owl:versionInfo "0.1.0" ;
+                                                                        mod:createdWith <https://chowlk.linkeddata.es/> .
 
-dcterms:creator a owl:AnnotationProperty .
+#################################################################
+#    Annotation properties
+#################################################################
 
-dcterms:description a owl:AnnotationProperty .
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
 
-dcterms:license a owl:AnnotationProperty .
 
-dcterms:title a owl:AnnotationProperty .
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
 
-vann:preferredNamespacePrefix a owl:AnnotationProperty .
 
-vann:preferredNamespaceUri a owl:AnnotationProperty .
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
 
-segittur:ArcheologicalSite a owl:Class ;
-    rdfs:label "Archeological Site" ;
-    rdfs:subClassOf tcm:BienCulturalInmueble .
 
-segittur:BullRing a owl:Class ;
-    rdfs:label "Bull Ring" ;
-    rdfs:subClassOf tcm:Edificio .
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
 
-segittur:Cathedral a owl:Class ;
-    rdfs:label "Cathedral" ;
-    rdfs:subClassOf tcm:TemploCristiano .
 
-segittur:Church a owl:Class ;
-    rdfs:label "Church" ;
-    rdfs:subClassOf tcm:TemploCristiano .
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
 
-segittur:Garden a owl:Class ;
-    rdfs:label "Garden" ;
-    rdfs:subClassOf tcm:BienCulturalInmueble .
 
-segittur:Minaret a owl:Class ;
-    rdfs:label "Minaret" ;
-    rdfs:subClassOf tcm:TemploIslámico .
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 
-segittur:Museum a owl:Class ;
-    rdfs:label "Museum" ;
-    rdfs:subClassOf tcm:Edificio .
 
-segittur:Stadium a owl:Class ;
-    rdfs:label "Stadium" ;
-    rdfs:subClassOf tcm:Edificio .
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
-segittur:Synagogue a owl:Class ;
-    rdfs:label "Synagogue" ;
-    rdfs:subClassOf tcm:TemploJudío .
 
-segittur:Theater a owl:Class ;
-    rdfs:label "Theater" ;
-    rdfs:subClassOf tcm:Edificio .
+###  http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI rdf:type owl:AnnotationProperty .
 
-tcm:ArchivoHistórico a owl:Class ;
-    rdfs:label "Archivo Histórico" ;
-    rdfs:subClassOf tcm:Documento .
 
-tcm:CentroHistórico a owl:Class ;
-    rdfs:label "Centro Histórico" ;
-    rdfs:subClassOf tcm:BienCulturalInmueble .
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
 
-tcm:Cerámica a owl:Class ;
-    rdfs:label "Cerámica" ;
-    rdfs:subClassOf tcm:ObjetoArqueológico .
 
-tcm:Escultura a owl:Class ;
-    rdfs:label "Escultura" ;
-    rdfs:subClassOf tcm:ObraDeArte .
+###  https://w3id.org/mod#createdWith
+mod:createdWith rdf:type owl:AnnotationProperty .
 
-tcm:Establecimiento a owl:Class ;
-    rdfs:label "Establecimiento" ;
-    rdfs:subClassOf tcm:Edificio .
 
-tcm:Herramienta a owl:Class ;
-    rdfs:label "Herramienta" ;
-    rdfs:subClassOf tcm:ObjetoArqueológico .
+#################################################################
+#    Datatypes
+#################################################################
 
-tcm:InstrumentoEléctrico a owl:Class ;
-    rdfs:label "Instrumento Eléctrico" ;
-    rdfs:subClassOf tcm:InstrumentoCientíficoTécnico .
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
 
-tcm:InstrumentoMusical a owl:Class ;
-    rdfs:label "Instrumento Musical" ;
-    rdfs:subClassOf tcm:ObjetoEtnográfico .
 
-tcm:InstrumentoNoEléctrico a owl:Class ;
-    rdfs:label "Instrumento No Eléctrico" ;
-    rdfs:subClassOf tcm:InstrumentoCientíficoTécnico .
+#################################################################
+#    Object Properties
+#################################################################
 
-tcm:Libro a owl:Class ;
-    rdfs:label "Libro" ;
-    rdfs:subClassOf tcm:Documento .
+###  http://www.owl-ontologies.com/tcm#AcudeOficina
+tcm:AcudeOficina rdf:type owl:ObjectProperty ;
+                 rdfs:domain tcm:Persona ;
+                 rdfs:range segittur:TouristInformationOffice ;
+                 rdfs:label "acude oficina" .
 
-tcm:Manuscrito a owl:Class ;
-    rdfs:label "Manuscrito" ;
-    rdfs:subClassOf tcm:Documento .
 
-tcm:Mapa a owl:Class ;
-    rdfs:label "Mapa" ;
-    rdfs:subClassOf tcm:Documento .
-
-tcm:MonumentoCivil a owl:Class ;
-    rdfs:label "Monumento Civil" ;
-    rdfs:subClassOf segittur:Monument .
-
-tcm:MonumentoMilitar a owl:Class ;
-    rdfs:label "Monumento Militar" ;
-    rdfs:subClassOf segittur:Monument .
-
-tcm:MonumentoReligioso a owl:Class ;
-    rdfs:label "Monumento Religioso" ;
-    rdfs:subClassOf segittur:Monument .
-
-tcm:Pintura a owl:Class ;
-    rdfs:label "Pintura" ;
-    rdfs:subClassOf tcm:ObraDeArte .
-
-tcm:RestoMaterial a owl:Class ;
-    rdfs:label "Resto Material" ;
-    rdfs:subClassOf tcm:ObjetoArqueológico .
-
-tcm:UtensilioTradicional a owl:Class ;
-    rdfs:label "Utensilio Tradicional" ;
-    rdfs:subClassOf tcm:ObjetoEtnográfico .
-
-tcm:Vestimenta a owl:Class ;
-    rdfs:label "Vestimenta" ;
-    rdfs:subClassOf tcm:ObjetoEtnográfico .
-
-tcm:fechaCompra a owl:DatatypeProperty ;
-    rdfs:label "fecha compra" .
-
-tcm:precioPagado a owl:DatatypeProperty ;
-    rdfs:label "precio pagado" .
-
-tcm:temporada a owl:DatatypeProperty ;
-    rdfs:label "temporada" .
-
-tcm:tipoVisitante a owl:DatatypeProperty ;
-    rdfs:label "tipo visitante" .
-
-owl:versionIRI a owl:AnnotationProperty .
-
-owl:versionInfo a owl:AnnotationProperty .
-
-tcm:AcudeOficina a owl:ObjectProperty ;
-    rdfs:label "acude oficina" ;
-    rdfs:domain tcm:Persona ;
-    rdfs:range segittur:TouristInformationOffice .
-
-tcm:AcudeVisita a owl:ObjectProperty ;
-    rdfs:label "acude visita" ;
-    rdfs:domain tcm:Persona ;
-    rdfs:range tcm:Tour .
-
-tcm:Compra a owl:ObjectProperty ;
-    rdfs:label "compra" ;
-    rdfs:domain tcm:Persona ;
-    rdfs:range tcm:ActoDeCompra .
-
-tcm:OfreceTarjeta a owl:ObjectProperty ;
-    rdfs:label "ofrece tarjeta" ;
-    rdfs:domain segittur:TouristInformationOffice ;
-    rdfs:range tcm:TarjetaTurística .
-
-tcm:TarifaBase a owl:ObjectProperty ;
-    rdfs:label "tarifa base" ;
-    rdfs:domain tcm:AplicacionTarifa ;
-    rdfs:range tcm:Tarifa .
-
-tcm:TarjetaComprada a owl:ObjectProperty ;
-    rdfs:label "tarjeta comprada" ;
-    rdfs:domain tcm:ActoDeCompra ;
-    rdfs:range tcm:TarjetaTurística .
-
-tcm:TemploIslámico a owl:Class ;
-    rdfs:label "Templo Islámico" ;
-    rdfs:subClassOf tcm:Templo .
-
-tcm:TemploJudío a owl:Class ;
-    rdfs:label "Templo Judío" ;
-    rdfs:subClassOf tcm:Templo .
-
-tcm:TieneBienCultural a owl:ObjectProperty ;
-    rdfs:label "tiene bien cultural" ;
-    rdfs:domain segittur:TourismDestination ;
-    rdfs:range tcm:BienCultural .
-
-tcm:TieneHorario a owl:ObjectProperty ;
-    rdfs:label "tiene horario" ;
-    rdfs:domain tcm:BienCulturalInmueble ;
-    rdfs:range segittur:Itinerary .
-
-tcm:TieneItinerario a owl:ObjectProperty ;
-    rdfs:label "tiene itinerario" ;
-    rdfs:domain tcm:Tour ;
-    rdfs:range segittur:Itinerary .
-
-tcm:VisitaBienInmueble a owl:ObjectProperty ;
-    rdfs:label "visita bien inmueble" ;
-    rdfs:domain tcm:Persona ;
-    rdfs:range tcm:BienCulturalInmueble .
-
-tcm:VisitaDestino a owl:ObjectProperty ;
-    rdfs:label "visita destino" ;
-    rdfs:domain tcm:Persona ;
-    rdfs:range segittur:TourismDestination .
-
-tcm:tieneAplicacionTarifa a owl:ObjectProperty ;
-    rdfs:label "tiene aplicacion tarifa" ;
-    rdfs:domain tcm:Tour ;
-    rdfs:range tcm:AplicacionTarifa .
-
-tcm:tieneOGD a owl:ObjectProperty ;
-    rdfs:label "tiene o g d" ;
-    rdfs:domain segittur:TourismDestination ;
-    rdfs:range tcm:OGD .
-
-tcm:tieneOficina a owl:ObjectProperty ;
-    rdfs:label "tiene oficina" ;
-    rdfs:domain segittur:TourismDestination ;
-    rdfs:range segittur:TouristInformationOffice .
-
-tcm:tieneTarifa a owl:ObjectProperty ;
-    rdfs:label "tiene tarifa" ;
-    rdfs:domain tcm:BienCulturalInmueble ;
-    rdfs:range tcm:Tarifa .
-
-tcm:tieneTarjeta a owl:ObjectProperty ;
-    rdfs:label "tiene tarjeta" ;
-    rdfs:domain segittur:TourismDestination ;
-    rdfs:range tcm:TarjetaTurística .
-
-<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> a owl:Ontology ;
-    dcterms:created "2025-11-10"^^xsd:date ;
-    dcterms:creator <https://github.com/anxomc>,
-        <https://w3id.org/people#AContributorURI> ;
-    dcterms:description "Extensión de la ontología de SEGITTUR, caso de: Turismo Cultural Material"@es ;
-    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:title "Ontología de Turismo Cultural Material (Extensión de SEGITTUR)"@es ;
-    vann:preferredNamespacePrefix "segittur",
-        "tcm" ;
-    vann:preferredNamespaceUri <https://ontologia.segittur.es/turismo/def/core#>,
-        <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> ;
-    owl:versionIRI <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/0.1.0> ;
-    owl:versionInfo "0.1.0" ;
-    mod:createdWith <https://chowlk.linkeddata.es/> .
-
-tcm:InstrumentoCientíficoTécnico a owl:Class ;
-    rdfs:label "Instrumento Científico Técnico" ;
-    rdfs:subClassOf tcm:BienCulturalMueble .
-
-tcm:OGD a owl:Class ;
-    rdfs:label "O G D" .
-
-tcm:ObraDeArte a owl:Class ;
-    rdfs:label "Obra De Arte" ;
-    rdfs:subClassOf tcm:BienCulturalMueble .
-
-tcm:TemploCristiano a owl:Class ;
-    rdfs:label "Templo Cristiano" ;
-    rdfs:subClassOf tcm:Templo .
-
-segittur:Monument a owl:Class ;
-    rdfs:label "Monument" ;
-    rdfs:subClassOf tcm:BienCulturalInmueble .
-
-tcm:ActoDeCompra a owl:Class ;
-    rdfs:label "Acto De Compra" ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom tcm:TarjetaTurística ;
-            owl:onProperty tcm:TarjetaComprada ] .
-
-tcm:AplicacionTarifa a owl:Class ;
-    rdfs:label "Aplicacion Tarifa" ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom tcm:Tarifa ;
-            owl:onProperty tcm:TarifaBase ] .
-
-tcm:ObjetoArqueológico a owl:Class ;
-    rdfs:label "Objeto Arqueológico" ;
-    rdfs:subClassOf tcm:BienCulturalMueble .
-
-tcm:ObjetoEtnográfico a owl:Class ;
-    rdfs:label "Objeto Etnográfico" ;
-    rdfs:subClassOf tcm:BienCulturalMueble .
-
-tcm:Templo a owl:Class ;
-    rdfs:label "Templo" ;
-    rdfs:subClassOf tcm:Edificio .
-
-segittur:Itinerary a owl:Class ;
-    rdfs:label "Itinerary" .
-
-tcm:BienCultural a owl:Class ;
-    rdfs:label "Bien Cultural" .
-
-tcm:Documento a owl:Class ;
-    rdfs:label "Documento" ;
-    rdfs:subClassOf tcm:BienCulturalMueble .
-
-tcm:Tarifa a owl:Class ;
-    rdfs:label "Tarifa" .
-
-tcm:Tour a owl:Class ;
-    rdfs:label "Tour" ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom tcm:AplicacionTarifa ;
-            owl:onProperty tcm:tieneAplicacionTarifa ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom segittur:Itinerary ;
-            owl:onProperty tcm:TieneItinerario ] .
-
-segittur:TouristInformationOffice a owl:Class ;
-    rdfs:label "Tourist Information Office" ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom tcm:TarjetaTurística ;
-            owl:onProperty tcm:OfreceTarjeta ] .
-
-tcm:BienCulturalMueble a owl:Class ;
-    rdfs:label "Bien Cultural Mueble" ;
-    rdfs:subClassOf tcm:BienCultural .
-
-tcm:Persona a owl:Class ;
-    rdfs:label "Persona" ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom segittur:TouristInformationOffice ;
-            owl:onProperty tcm:AcudeOficina ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom tcm:ActoDeCompra ;
-            owl:onProperty tcm:Compra ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom segittur:TourismDestination ;
-            owl:onProperty tcm:VisitaDestino ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom tcm:Tour ;
-            owl:onProperty tcm:AcudeVisita ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom tcm:BienCulturalInmueble ;
-            owl:onProperty tcm:VisitaBienInmueble ] .
-
-segittur:TourismDestination a owl:Class ;
-    rdfs:label "Tourism Destination" ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom segittur:TouristInformationOffice ;
-            owl:onProperty tcm:tieneOficina ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom tcm:OGD ;
-            owl:onProperty tcm:tieneOGD ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom tcm:TarjetaTurística ;
-            owl:onProperty tcm:tieneTarjeta ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom tcm:BienCultural ;
-            owl:onProperty tcm:TieneBienCultural ] .
-
-tcm:Edificio a owl:Class ;
-    rdfs:label "Edificio" ;
-    rdfs:subClassOf tcm:BienCulturalInmueble .
-
-tcm:TarjetaTurística a owl:Class ;
-    rdfs:label "Tarjeta Turística" .
-
-tcm:BienCulturalInmueble a owl:Class ;
-    rdfs:label "Bien Cultural Inmueble" ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom tcm:Tarifa ;
-            owl:onProperty tcm:tieneTarifa ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom segittur:Itinerary ;
-            owl:onProperty tcm:TieneHorario ],
-        tcm:BienCultural .
+###  http://www.owl-ontologies.com/tcm#AcudeVisita
+tcm:AcudeVisita rdf:type owl:ObjectProperty ;
+                rdfs:domain tcm:Persona ;
+                rdfs:range tcm:Tour ;
+                rdfs:label "acude visita" .
 
+
+###  http://www.owl-ontologies.com/tcm#Compra
+tcm:Compra rdf:type owl:ObjectProperty ;
+           rdfs:domain tcm:Persona ;
+           rdfs:range tcm:ActoDeCompra ;
+           rdfs:label "compra" .
+
+
+###  http://www.owl-ontologies.com/tcm#OfreceTarjeta
+tcm:OfreceTarjeta rdf:type owl:ObjectProperty ;
+                  rdfs:domain segittur:TouristInformationOffice ;
+                  rdfs:range tcm:TarjetaTurística ;
+                  rdfs:label "ofrece tarjeta" .
+
+
+###  http://www.owl-ontologies.com/tcm#TarifaBase
+tcm:TarifaBase rdf:type owl:ObjectProperty ;
+               rdfs:domain tcm:AplicacionTarifa ;
+               rdfs:range tcm:Tarifa ;
+               rdfs:label "tarifa base" .
+
+
+###  http://www.owl-ontologies.com/tcm#TarjetaComprada
+tcm:TarjetaComprada rdf:type owl:ObjectProperty ;
+                    rdfs:domain tcm:ActoDeCompra ;
+                    rdfs:range tcm:TarjetaTurística ;
+                    rdfs:label "tarjeta comprada" .
+
+
+###  http://www.owl-ontologies.com/tcm#TieneBienCultural
+tcm:TieneBienCultural rdf:type owl:ObjectProperty ;
+                      rdfs:domain segittur:TourismDestination ;
+                      rdfs:range tcm:BienCultural ;
+                      rdfs:label "tiene bien cultural" .
+
+
+###  http://www.owl-ontologies.com/tcm#TieneHorario
+tcm:TieneHorario rdf:type owl:ObjectProperty ;
+                 rdfs:domain tcm:BienCulturalInmueble ;
+                 rdfs:range segittur:Itinerary ;
+                 rdfs:label "tiene horario" .
+
+
+###  http://www.owl-ontologies.com/tcm#TieneItinerario
+tcm:TieneItinerario rdf:type owl:ObjectProperty ;
+                    rdfs:domain tcm:Tour ;
+                    rdfs:range segittur:Itinerary ;
+                    rdfs:label "tiene itinerario" .
+
+
+###  http://www.owl-ontologies.com/tcm#VisitaBienInmueble
+tcm:VisitaBienInmueble rdf:type owl:ObjectProperty ;
+                       rdfs:domain tcm:Persona ;
+                       rdfs:range tcm:BienCulturalInmueble ;
+                       rdfs:label "visita bien inmueble" .
+
+
+###  http://www.owl-ontologies.com/tcm#VisitaDestino
+tcm:VisitaDestino rdf:type owl:ObjectProperty ;
+                  rdfs:domain tcm:Persona ;
+                  rdfs:range segittur:TourismDestination ;
+                  rdfs:label "visita destino" .
+
+
+###  http://www.owl-ontologies.com/tcm#tieneAplicacionTarifa
+tcm:tieneAplicacionTarifa rdf:type owl:ObjectProperty ;
+                          rdfs:domain tcm:Tour ;
+                          rdfs:range tcm:AplicacionTarifa ;
+                          rdfs:label "tiene aplicacion tarifa" .
+
+
+###  http://www.owl-ontologies.com/tcm#tieneOGD
+tcm:tieneOGD rdf:type owl:ObjectProperty ;
+             rdfs:domain segittur:TourismDestination ;
+             rdfs:range tcm:OGD ;
+             rdfs:label "tiene o g d" .
+
+
+###  http://www.owl-ontologies.com/tcm#tieneOficina
+tcm:tieneOficina rdf:type owl:ObjectProperty ;
+                 rdfs:domain segittur:TourismDestination ;
+                 rdfs:range segittur:TouristInformationOffice ;
+                 rdfs:label "tiene oficina" .
+
+
+###  http://www.owl-ontologies.com/tcm#tieneTarifa
+tcm:tieneTarifa rdf:type owl:ObjectProperty ;
+                rdfs:domain tcm:BienCulturalInmueble ;
+                rdfs:range tcm:Tarifa ;
+                rdfs:label "tiene tarifa" .
+
+
+###  http://www.owl-ontologies.com/tcm#tieneTarjeta
+tcm:tieneTarjeta rdf:type owl:ObjectProperty ;
+                 rdfs:domain segittur:TourismDestination ;
+                 rdfs:range tcm:TarjetaTurística ;
+                 rdfs:label "tiene tarjeta" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.owl-ontologies.com/tcm#fechaCompra
+tcm:fechaCompra rdf:type owl:DatatypeProperty ;
+                rdfs:label "fecha compra" .
+
+
+###  http://www.owl-ontologies.com/tcm#precioPagado
+tcm:precioPagado rdf:type owl:DatatypeProperty ;
+                 rdfs:label "precio pagado" .
+
+
+###  http://www.owl-ontologies.com/tcm#temporada
+tcm:temporada rdf:type owl:DatatypeProperty ;
+              rdfs:label "temporada" .
+
+
+###  http://www.owl-ontologies.com/tcm#tipoVisitante
+tcm:tipoVisitante rdf:type owl:DatatypeProperty ;
+                  rdfs:label "tipo visitante" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.owl-ontologies.com/segittur#ArcheologicalSite
+segittur:ArcheologicalSite rdf:type owl:Class ;
+                           rdfs:subClassOf tcm:BienCulturalInmueble ;
+                           rdfs:label "Archeological Site" .
+
+
+###  http://www.owl-ontologies.com/segittur#BullRing
+segittur:BullRing rdf:type owl:Class ;
+                  rdfs:subClassOf tcm:Edificio ;
+                  rdfs:label "Bull Ring" .
+
+
+###  http://www.owl-ontologies.com/segittur#Cathedral
+segittur:Cathedral rdf:type owl:Class ;
+                   rdfs:subClassOf tcm:TemploCristiano ;
+                   rdfs:label "Cathedral" .
+
+
+###  http://www.owl-ontologies.com/segittur#Church
+segittur:Church rdf:type owl:Class ;
+                rdfs:subClassOf tcm:TemploCristiano ;
+                rdfs:label "Church" .
+
+
+###  http://www.owl-ontologies.com/segittur#Garden
+segittur:Garden rdf:type owl:Class ;
+                rdfs:subClassOf tcm:BienCulturalInmueble ;
+                rdfs:label "Garden" .
+
+
+###  http://www.owl-ontologies.com/segittur#Itinerary
+segittur:Itinerary rdf:type owl:Class ;
+                   rdfs:label "Itinerary" .
+
+
+###  http://www.owl-ontologies.com/segittur#Minaret
+segittur:Minaret rdf:type owl:Class ;
+                 rdfs:subClassOf tcm:TemploIslámico ;
+                 rdfs:label "Minaret" .
+
+
+###  http://www.owl-ontologies.com/segittur#Monument
+segittur:Monument rdf:type owl:Class ;
+                  rdfs:subClassOf tcm:BienCulturalInmueble ;
+                  rdfs:label "Monument" .
+
+
+###  http://www.owl-ontologies.com/segittur#Museum
+segittur:Museum rdf:type owl:Class ;
+                rdfs:subClassOf tcm:Edificio ;
+                rdfs:label "Museum" .
+
+
+###  http://www.owl-ontologies.com/segittur#Stadium
+segittur:Stadium rdf:type owl:Class ;
+                 rdfs:subClassOf tcm:Edificio ;
+                 rdfs:label "Stadium" .
+
+
+###  http://www.owl-ontologies.com/segittur#Synagogue
+segittur:Synagogue rdf:type owl:Class ;
+                   rdfs:subClassOf tcm:TemploJudío ;
+                   rdfs:label "Synagogue" .
+
+
+###  http://www.owl-ontologies.com/segittur#Theater
+segittur:Theater rdf:type owl:Class ;
+                 rdfs:subClassOf tcm:Edificio ;
+                 rdfs:label "Theater" .
+
+
+###  http://www.owl-ontologies.com/segittur#TourismDestination
+segittur:TourismDestination rdf:type owl:Class ;
+                            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                              owl:onProperty tcm:TieneBienCultural ;
+                                              owl:allValuesFrom tcm:BienCultural
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty tcm:tieneOGD ;
+                                              owl:allValuesFrom tcm:OGD
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty tcm:tieneOficina ;
+                                              owl:allValuesFrom segittur:TouristInformationOffice
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty tcm:tieneTarjeta ;
+                                              owl:allValuesFrom tcm:TarjetaTurística
+                                            ] ;
+                            rdfs:label "Tourism Destination" .
+
+
+###  http://www.owl-ontologies.com/segittur#TouristInformationOffice
+segittur:TouristInformationOffice rdf:type owl:Class ;
+                                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                    owl:onProperty tcm:OfreceTarjeta ;
+                                                    owl:allValuesFrom tcm:TarjetaTurística
+                                                  ] ;
+                                  rdfs:label "Tourist Information Office" .
+
+
+###  http://www.owl-ontologies.com/tcm#ActoDeCompra
+tcm:ActoDeCompra rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty tcm:TarjetaComprada ;
+                                   owl:allValuesFrom tcm:TarjetaTurística
+                                 ] ;
+                 rdfs:label "Acto De Compra" .
+
+
+###  http://www.owl-ontologies.com/tcm#AplicacionTarifa
+tcm:AplicacionTarifa rdf:type owl:Class ;
+                     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                       owl:onProperty tcm:TarifaBase ;
+                                       owl:allValuesFrom tcm:Tarifa
+                                     ] ;
+                     rdfs:label "Aplicacion Tarifa" .
+
+
+###  http://www.owl-ontologies.com/tcm#ArchivoHistórico
+tcm:ArchivoHistórico rdf:type owl:Class ;
+                     rdfs:subClassOf tcm:Documento ;
+                     rdfs:label "Archivo Histórico" .
+
+
+###  http://www.owl-ontologies.com/tcm#BienCultural
+tcm:BienCultural rdf:type owl:Class ;
+                 rdfs:label "Bien Cultural" .
+
+
+###  http://www.owl-ontologies.com/tcm#BienCulturalInmueble
+tcm:BienCulturalInmueble rdf:type owl:Class ;
+                         rdfs:subClassOf tcm:BienCultural ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty tcm:TieneHorario ;
+                                           owl:allValuesFrom segittur:Itinerary
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty tcm:tieneTarifa ;
+                                           owl:allValuesFrom tcm:Tarifa
+                                         ] ;
+                         owl:disjointWith tcm:BienCulturalMueble ;
+                         rdfs:label "Bien Cultural Inmueble" .
+
+
+###  http://www.owl-ontologies.com/tcm#BienCulturalMueble
+tcm:BienCulturalMueble rdf:type owl:Class ;
+                       rdfs:subClassOf tcm:BienCultural ;
+                       rdfs:label "Bien Cultural Mueble" .
+
+
+###  http://www.owl-ontologies.com/tcm#CentroHistórico
+tcm:CentroHistórico rdf:type owl:Class ;
+                    rdfs:subClassOf tcm:BienCulturalInmueble ;
+                    rdfs:label "Centro Histórico" .
+
+
+###  http://www.owl-ontologies.com/tcm#Cerámica
+tcm:Cerámica rdf:type owl:Class ;
+             rdfs:subClassOf tcm:ObjetoArqueológico ;
+             rdfs:label "Cerámica" .
+
+
+###  http://www.owl-ontologies.com/tcm#Documento
+tcm:Documento rdf:type owl:Class ;
+              rdfs:subClassOf tcm:BienCulturalMueble ;
+              rdfs:label "Documento" .
+
+
+###  http://www.owl-ontologies.com/tcm#Edificio
+tcm:Edificio rdf:type owl:Class ;
+             rdfs:subClassOf tcm:BienCulturalInmueble ;
+             rdfs:label "Edificio" .
+
+
+###  http://www.owl-ontologies.com/tcm#Escultura
+tcm:Escultura rdf:type owl:Class ;
+              rdfs:subClassOf tcm:ObraDeArte ;
+              rdfs:label "Escultura" .
+
+
+###  http://www.owl-ontologies.com/tcm#Establecimiento
+tcm:Establecimiento rdf:type owl:Class ;
+                    rdfs:subClassOf tcm:Edificio ;
+                    rdfs:label "Establecimiento" .
+
+
+###  http://www.owl-ontologies.com/tcm#Herramienta
+tcm:Herramienta rdf:type owl:Class ;
+                rdfs:subClassOf tcm:ObjetoArqueológico ;
+                rdfs:label "Herramienta" .
+
+
+###  http://www.owl-ontologies.com/tcm#InstrumentoCientíficoTécnico
+tcm:InstrumentoCientíficoTécnico rdf:type owl:Class ;
+                                 rdfs:subClassOf tcm:BienCulturalMueble ;
+                                 rdfs:label "Instrumento Científico Técnico" .
+
+
+###  http://www.owl-ontologies.com/tcm#InstrumentoEléctrico
+tcm:InstrumentoEléctrico rdf:type owl:Class ;
+                         rdfs:subClassOf tcm:InstrumentoCientíficoTécnico ;
+                         owl:disjointWith tcm:InstrumentoNoEléctrico ;
+                         rdfs:label "Instrumento Eléctrico" .
+
+
+###  http://www.owl-ontologies.com/tcm#InstrumentoMusical
+tcm:InstrumentoMusical rdf:type owl:Class ;
+                       rdfs:subClassOf tcm:ObjetoEtnográfico ;
+                       rdfs:label "Instrumento Musical" .
+
+
+###  http://www.owl-ontologies.com/tcm#InstrumentoNoEléctrico
+tcm:InstrumentoNoEléctrico rdf:type owl:Class ;
+                           rdfs:subClassOf tcm:InstrumentoCientíficoTécnico ;
+                           rdfs:label "Instrumento No Eléctrico" .
+
+
+###  http://www.owl-ontologies.com/tcm#Libro
+tcm:Libro rdf:type owl:Class ;
+          rdfs:subClassOf tcm:Documento ;
+          rdfs:label "Libro" .
+
+
+###  http://www.owl-ontologies.com/tcm#Manuscrito
+tcm:Manuscrito rdf:type owl:Class ;
+               rdfs:subClassOf tcm:Documento ;
+               rdfs:label "Manuscrito" .
+
+
+###  http://www.owl-ontologies.com/tcm#Mapa
+tcm:Mapa rdf:type owl:Class ;
+         rdfs:subClassOf tcm:Documento ;
+         rdfs:label "Mapa" .
+
+
+###  http://www.owl-ontologies.com/tcm#MonumentoCivil
+tcm:MonumentoCivil rdf:type owl:Class ;
+                   rdfs:subClassOf segittur:Monument ;
+                   rdfs:label "Monumento Civil" .
+
+
+###  http://www.owl-ontologies.com/tcm#MonumentoMilitar
+tcm:MonumentoMilitar rdf:type owl:Class ;
+                     rdfs:subClassOf segittur:Monument ;
+                     rdfs:label "Monumento Militar" .
+
+
+###  http://www.owl-ontologies.com/tcm#MonumentoReligioso
+tcm:MonumentoReligioso rdf:type owl:Class ;
+                       rdfs:subClassOf segittur:Monument ;
+                       rdfs:label "Monumento Religioso" .
+
+
+###  http://www.owl-ontologies.com/tcm#OGD
+tcm:OGD rdf:type owl:Class ;
+        rdfs:label "O G D" .
+
+
+###  http://www.owl-ontologies.com/tcm#ObjetoArqueológico
+tcm:ObjetoArqueológico rdf:type owl:Class ;
+                       rdfs:subClassOf tcm:BienCulturalMueble ;
+                       rdfs:label "Objeto Arqueológico" .
+
+
+###  http://www.owl-ontologies.com/tcm#ObjetoEtnográfico
+tcm:ObjetoEtnográfico rdf:type owl:Class ;
+                      rdfs:subClassOf tcm:BienCulturalMueble ;
+                      rdfs:label "Objeto Etnográfico" .
+
+
+###  http://www.owl-ontologies.com/tcm#ObraDeArte
+tcm:ObraDeArte rdf:type owl:Class ;
+               rdfs:subClassOf tcm:BienCulturalMueble ;
+               rdfs:label "Obra De Arte" .
+
+
+###  http://www.owl-ontologies.com/tcm#Persona
+tcm:Persona rdf:type owl:Class ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty tcm:AcudeOficina ;
+                              owl:allValuesFrom segittur:TouristInformationOffice
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty tcm:AcudeVisita ;
+                              owl:allValuesFrom tcm:Tour
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty tcm:Compra ;
+                              owl:allValuesFrom tcm:ActoDeCompra
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty tcm:VisitaBienInmueble ;
+                              owl:allValuesFrom tcm:BienCulturalInmueble
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty tcm:VisitaDestino ;
+                              owl:allValuesFrom segittur:TourismDestination
+                            ] ;
+            rdfs:label "Persona" .
+
+
+###  http://www.owl-ontologies.com/tcm#Pintura
+tcm:Pintura rdf:type owl:Class ;
+            rdfs:subClassOf tcm:ObraDeArte ;
+            rdfs:label "Pintura" .
+
+
+###  http://www.owl-ontologies.com/tcm#RestoMaterial
+tcm:RestoMaterial rdf:type owl:Class ;
+                  rdfs:subClassOf tcm:ObjetoArqueológico ;
+                  rdfs:label "Resto Material" .
+
+
+###  http://www.owl-ontologies.com/tcm#Tarifa
+tcm:Tarifa rdf:type owl:Class ;
+           rdfs:label "Tarifa" .
+
+
+###  http://www.owl-ontologies.com/tcm#TarjetaTurística
+tcm:TarjetaTurística rdf:type owl:Class ;
+                     rdfs:label "Tarjeta Turística" .
+
+
+###  http://www.owl-ontologies.com/tcm#Templo
+tcm:Templo rdf:type owl:Class ;
+           rdfs:subClassOf tcm:Edificio ;
+           rdfs:label "Templo" .
+
+
+###  http://www.owl-ontologies.com/tcm#TemploCristiano
+tcm:TemploCristiano rdf:type owl:Class ;
+                    rdfs:subClassOf tcm:Templo ;
+                    rdfs:label "Templo Cristiano" .
+
+
+###  http://www.owl-ontologies.com/tcm#TemploIslámico
+tcm:TemploIslámico rdf:type owl:Class ;
+                   rdfs:subClassOf tcm:Templo ;
+                   rdfs:label "Templo Islámico" .
+
+
+###  http://www.owl-ontologies.com/tcm#TemploJudío
+tcm:TemploJudío rdf:type owl:Class ;
+                rdfs:subClassOf tcm:Templo ;
+                rdfs:label "Templo Judío" .
+
+
+###  http://www.owl-ontologies.com/tcm#Tour
+tcm:Tour rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty tcm:TieneItinerario ;
+                           owl:allValuesFrom segittur:Itinerary
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty tcm:tieneAplicacionTarifa ;
+                           owl:allValuesFrom tcm:AplicacionTarifa
+                         ] ;
+         rdfs:label "Tour" .
+
+
+###  http://www.owl-ontologies.com/tcm#UtensilioTradicional
+tcm:UtensilioTradicional rdf:type owl:Class ;
+                         rdfs:subClassOf tcm:ObjetoEtnográfico ;
+                         rdfs:label "Utensilio Tradicional" .
+
+
+###  http://www.owl-ontologies.com/tcm#Vestimenta
+tcm:Vestimenta rdf:type owl:Class ;
+               rdfs:subClassOf tcm:ObjetoEtnográfico ;
+               rdfs:label "Vestimenta" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
