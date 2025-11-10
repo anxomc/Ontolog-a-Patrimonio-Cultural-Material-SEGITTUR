@@ -1,6 +1,6 @@
 # Ontología de Turismo Cultural Material (Extensión de SEGITTUR)
 
-[Repositorio: ](https://github.com/anxomc/Ontolog-a-Patrimonio-Cultural-Material-SEGITTUR) Este repositorio contiene el trabajo práctico de la asignatura **Ingeniería Ontológica (2025-26)** del [Máster en Inteligencia Artificial](https://muia.dia.fi.upm.es/es/horarios/).
+Este repositorio contiene el trabajo práctico de la asignatura **Ingeniería Ontológica (2025-26)** del [Máster en Inteligencia Artificial](https://muia.dia.fi.upm.es/es/horarios/).
 
 El objetivo del proyecto es desarrollar una ontología OWL que extiende la [ontología 'core' de SEGITTUR](https://ontologia.segittur.es/turismo/def/core/) para modelar el caso de uso de **Turismo Cultural Material**.
 
