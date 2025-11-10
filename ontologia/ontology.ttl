@@ -137,6 +137,18 @@ tcm:Vestimenta a owl:Class ;
     rdfs:label "Vestimenta" ;
     rdfs:subClassOf tcm:ObjetoEtnográfico .
 
+tcm:fechaCompra a owl:DatatypeProperty ;
+    rdfs:label "fecha compra" .
+
+tcm:precioPagado a owl:DatatypeProperty ;
+    rdfs:label "precio pagado" .
+
+tcm:temporada a owl:DatatypeProperty ;
+    rdfs:label "temporada" .
+
+tcm:tipoVisitante a owl:DatatypeProperty ;
+    rdfs:label "tipo visitante" .
+
 owl:versionIRI a owl:AnnotationProperty .
 
 owl:versionInfo a owl:AnnotationProperty .
@@ -154,11 +166,21 @@ tcm:AcudeVisita a owl:ObjectProperty ;
 tcm:Compra a owl:ObjectProperty ;
     rdfs:label "compra" ;
     rdfs:domain tcm:Persona ;
-    rdfs:range tcm:TarjetaTurística .
+    rdfs:range tcm:ActoDeCompra .
 
 tcm:OfreceTarjeta a owl:ObjectProperty ;
     rdfs:label "ofrece tarjeta" ;
     rdfs:domain segittur:TouristInformationOffice ;
+    rdfs:range tcm:TarjetaTurística .
+
+tcm:TarifaBase a owl:ObjectProperty ;
+    rdfs:label "tarifa base" ;
+    rdfs:domain tcm:AplicacionTarifa ;
+    rdfs:range tcm:Tarifa .
+
+tcm:TarjetaComprada a owl:ObjectProperty ;
+    rdfs:label "tarjeta comprada" ;
+    rdfs:domain tcm:ActoDeCompra ;
     rdfs:range tcm:TarjetaTurística .
 
 tcm:TemploIslámico a owl:Class ;
@@ -194,6 +216,11 @@ tcm:VisitaDestino a owl:ObjectProperty ;
     rdfs:domain tcm:Persona ;
     rdfs:range segittur:TourismDestination .
 
+tcm:tieneAplicacionTarifa a owl:ObjectProperty ;
+    rdfs:label "tiene aplicacion tarifa" ;
+    rdfs:domain tcm:Tour ;
+    rdfs:range tcm:AplicacionTarifa .
+
 tcm:tieneOGD a owl:ObjectProperty ;
     rdfs:label "tiene o g d" ;
     rdfs:domain segittur:TourismDestination ;
@@ -203,6 +230,11 @@ tcm:tieneOficina a owl:ObjectProperty ;
     rdfs:label "tiene oficina" ;
     rdfs:domain segittur:TourismDestination ;
     rdfs:range segittur:TouristInformationOffice .
+
+tcm:tieneTarifa a owl:ObjectProperty ;
+    rdfs:label "tiene tarifa" ;
+    rdfs:domain tcm:BienCulturalInmueble ;
+    rdfs:range tcm:Tarifa .
 
 tcm:tieneTarjeta a owl:ObjectProperty ;
     rdfs:label "tiene tarjeta" ;
@@ -239,15 +271,21 @@ tcm:TemploCristiano a owl:Class ;
     rdfs:label "Templo Cristiano" ;
     rdfs:subClassOf tcm:Templo .
 
-tcm:tieneTarifa a owl:ObjectProperty ;
-    rdfs:label "tiene tarifa" ;
-    rdfs:domain tcm:BienCulturalInmueble,
-        tcm:Tour ;
-    rdfs:range tcm:Tarifa .
-
 segittur:Monument a owl:Class ;
     rdfs:label "Monument" ;
     rdfs:subClassOf tcm:BienCulturalInmueble .
+
+tcm:ActoDeCompra a owl:Class ;
+    rdfs:label "Acto De Compra" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom tcm:TarjetaTurística ;
+            owl:onProperty tcm:TarjetaComprada ] .
+
+tcm:AplicacionTarifa a owl:Class ;
+    rdfs:label "Aplicacion Tarifa" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom tcm:Tarifa ;
+            owl:onProperty tcm:TarifaBase ] .
 
 tcm:ObjetoArqueológico a owl:Class ;
     rdfs:label "Objeto Arqueológico" ;
@@ -256,9 +294,6 @@ tcm:ObjetoArqueológico a owl:Class ;
 tcm:ObjetoEtnográfico a owl:Class ;
     rdfs:label "Objeto Etnográfico" ;
     rdfs:subClassOf tcm:BienCulturalMueble .
-
-tcm:Tarifa a owl:Class ;
-    rdfs:label "Tarifa" .
 
 tcm:Templo a owl:Class ;
     rdfs:label "Templo" ;
@@ -274,11 +309,14 @@ tcm:Documento a owl:Class ;
     rdfs:label "Documento" ;
     rdfs:subClassOf tcm:BienCulturalMueble .
 
+tcm:Tarifa a owl:Class ;
+    rdfs:label "Tarifa" .
+
 tcm:Tour a owl:Class ;
     rdfs:label "Tour" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom tcm:Tarifa ;
-            owl:onProperty tcm:tieneTarifa ],
+            owl:allValuesFrom tcm:AplicacionTarifa ;
+            owl:onProperty tcm:tieneAplicacionTarifa ],
         [ a owl:Restriction ;
             owl:allValuesFrom segittur:Itinerary ;
             owl:onProperty tcm:TieneItinerario ] .
@@ -299,7 +337,7 @@ tcm:Persona a owl:Class ;
             owl:allValuesFrom segittur:TouristInformationOffice ;
             owl:onProperty tcm:AcudeOficina ],
         [ a owl:Restriction ;
-            owl:allValuesFrom tcm:TarjetaTurística ;
+            owl:allValuesFrom tcm:ActoDeCompra ;
             owl:onProperty tcm:Compra ],
         [ a owl:Restriction ;
             owl:allValuesFrom segittur:TourismDestination ;
