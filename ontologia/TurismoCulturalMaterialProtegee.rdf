@@ -535,6 +535,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCultural -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCultural">
+        <rdfs:comment xml:lang="es">Clase raíz de la ontología. Un Bien Cultural representa a objetos e infraestructuras con un peso cultural.</rdfs:comment>
         <rdfs:label>Bien Cultural</rdfs:label>
     </owl:Class>
     
@@ -556,7 +557,7 @@
                 <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tarifa"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalMueble"/>
+        <rdfs:comment xml:lang="es">Bienes culturas que son inamovibles en lo que respecta a su ubicación geográfica.</rdfs:comment>
         <rdfs:label>Bien Cultural Inmueble</rdfs:label>
     </owl:Class>
     
@@ -566,6 +567,7 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalMueble">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCultural"/>
+        <rdfs:comment>Bien cultural que puede moverse de localización.</rdfs:comment>
         <rdfs:label>Bien Cultural Mueble</rdfs:label>
     </owl:Class>
     
@@ -647,7 +649,6 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoEléctrico">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoCientíficoTécnico"/>
-        <owl:disjointWith rdf:resource="https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoNoEléctrico"/>
         <rdfs:label>Instrumento Eléctrico</rdfs:label>
     </owl:Class>
     
