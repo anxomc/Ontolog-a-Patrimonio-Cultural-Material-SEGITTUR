@@ -302,6 +302,8 @@
     <!-- https://ontologia.segittur.es/turismo/def/turismo-cultural-material/fechaCompra -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/turismo-cultural-material/fechaCompra">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ActoDeCompra"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:label>fecha compra</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -310,6 +312,8 @@
     <!-- https://ontologia.segittur.es/turismo/def/turismo-cultural-material/precioPagado -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/turismo-cultural-material/precioPagado">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ActoDeCompra"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label>precio pagado</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -318,6 +322,8 @@
     <!-- https://ontologia.segittur.es/turismo/def/turismo-cultural-material/temporada -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/turismo-cultural-material/temporada">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>temporada</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -326,6 +332,8 @@
     <!-- https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tipoVisitante -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tipoVisitante">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>tipo visitante</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -557,6 +565,7 @@
                 <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tarifa"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalMueble"/>
         <rdfs:comment xml:lang="es">Bienes culturas que son inamovibles en lo que respecta a su ubicación geográfica.</rdfs:comment>
         <rdfs:label>Bien Cultural Inmueble</rdfs:label>
     </owl:Class>
@@ -649,6 +658,7 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoEléctrico">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoCientíficoTécnico"/>
+        <owl:disjointWith rdf:resource="https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoNoEléctrico"/>
         <rdfs:label>Instrumento Eléctrico</rdfs:label>
     </owl:Class>
     
