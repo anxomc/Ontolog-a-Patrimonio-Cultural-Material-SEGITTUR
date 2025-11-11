@@ -2,8 +2,8 @@
 @prefix mod: <https://w3id.org/mod#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix segittur: <http://www.owl-ontologies.com/segittur#> .
-@prefix tcm: <http://www.owl-ontologies.com/tcm#> .
+@prefix segittur: <https://ontologia.segittur.es/turismo/def/core/#> .
+@prefix tcm: <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
