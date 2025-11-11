@@ -238,6 +238,17 @@
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/turismo-cultural-material/esOficinaDe -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/turismo-cultural-material/esOficinaDe">
+        <owl:inverseOf rdf:resource="https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneOficina"/>
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice"/>
+        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core/#TourismDestination"/>
+        <rdfs:label xml:lang="es">esOficinaDe</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneAplicacionTarifa -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneAplicacionTarifa">
