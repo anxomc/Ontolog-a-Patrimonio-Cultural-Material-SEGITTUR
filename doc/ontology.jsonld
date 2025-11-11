@@ -1,0 +1,1155 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCultural"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneBienCultural"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AcudeOficina"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tour"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AcudeVisita"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ActoDeCompra"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Compra"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaBienInmueble"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#TourismDestination"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaDestino"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#Itinerary"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneItinerario"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifa"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneAplicacionTarifa"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/OGD"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneOGD"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneOficina"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaTurística"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneTarjeta"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaTurística"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/OfreceTarjeta"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaTurística"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaComprada"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tarifa"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarifaBase"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#Itinerary"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Incluye"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tarifa"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneTarifa"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#versionInfo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/core/#ArcheologicalSite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Archeological Site"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/core/#BullRing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bull Ring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Edificio"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/core/#Cathedral",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cathedral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploCristiano"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/core/#Church",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Church"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploCristiano"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/core/#Garden",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Garden"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/core/#Itinerary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Itinerary"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/core/#Minaret",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Minaret"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploIslámico"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/core/#Monument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Monument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/core/#Museum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Museum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Edificio"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/core/#Stadium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Stadium"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Edificio"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/core/#Synagogue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Synagogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploJudío"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/core/#Theater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Theater"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Edificio"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/core/#TourismDestination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tourism Destination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tourist Information Office"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-11-10"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://github.com/anxomc"
+  }, {
+    "@id" : "https://w3id.org/people#AContributorURI"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "es",
+    "@value" : "Extensión de la ontología de SEGITTUR, caso de: Turismo Cultural Material"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "es",
+    "@value" : "Ontología de Turismo Cultural Material (Extensión de SEGITTUR)"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "segittur"
+  }, {
+    "@value" : "tcm"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core#"
+  }, {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/0.1.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.1.0"
+  } ],
+  "https://w3id.org/mod#createdWith" : [ {
+    "@id" : "https://chowlk.linkeddata.es/"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ActoDeCompra",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Acto De Compra"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid6"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AcudeOficina",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "acude oficina"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsAcudidaPor"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AcudeVisita",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "acude visita"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tour"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaEsAcudidaPor"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Aplicacion Tarifa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid7"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifaAplicada",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tour"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneAplicacionTarifa"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ArchivoHistórico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Archivo Histórico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Documento"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCultural",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Clase raíz de la ontología. Un Bien Cultural representa a objetos e infraestructuras con un peso cultural."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bien Cultural"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Bienes culturales que son inamovibles en lo que respecta a su ubicación geográfica."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bien Cultural Inmueble"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCultural"
+  }, {
+    "@id" : "_:genid8"
+  }, {
+    "@id" : "_:genid9"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalMueble"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalMueble",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Bien cultural que puede moverse de localización."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bien Cultural Mueble"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCultural"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/CentroHistórico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Centro Histórico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Cerámica",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cerámica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObjetoArqueológico"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Compra",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "compra"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ActoDeCompra"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsCompradoPor"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/DestinoEsVisitadoPor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#TourismDestination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaDestino"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Documento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Documento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalMueble"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Edificio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Edificio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsAcudidaPor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsCompradaPor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaTurística"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ActoDeCompra"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaComprada"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsCompradoPor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ActoDeCompra"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsOfrecidaPor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaTurística"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/OfreceTarjeta"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsVisitadoPor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaBienInmueble"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Escultura",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Escultura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObraDeArte"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EstaDisponibleEn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCultural"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#TourismDestination"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneBienCultural"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EstaIncluidoEn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#Itinerary"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Incluye"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Establecimiento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Establecimiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Edificio"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EstarAsociadaA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tarifa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneTarifa"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Herramienta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Herramienta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObjetoArqueológico"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Incluye",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Incluye"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#Itinerary"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoCientíficoTécnico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Instrumento Científico Técnico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalMueble"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoEléctrico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Instrumento Eléctrico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoCientíficoTécnico"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoNoEléctrico"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoMusical",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Instrumento Musical"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObjetoEtnográfico"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoNoEléctrico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Instrumento No Eléctrico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoCientíficoTécnico"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Libro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Libro"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Documento"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Manuscrito",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Manuscrito"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Documento"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Mapa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mapa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Documento"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/MonumentoCivil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Monumento Civil"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#Monument"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/MonumentoMilitar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Monumento Militar"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#Monument"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/MonumentoReligioso",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Monumento Religioso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#Monument"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/OGD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "O G D"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObjetoArqueológico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Objeto Arqueológico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalMueble"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObjetoEtnográfico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Objeto Etnográfico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalMueble"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObraDeArte",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Obra De Arte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalMueble"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/OfreceTarjeta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ofrece tarjeta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaTurística"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Persona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid10"
+  }, {
+    "@id" : "_:genid11"
+  }, {
+    "@id" : "_:genid12"
+  }, {
+    "@id" : "_:genid13"
+  }, {
+    "@id" : "_:genid14"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/PerteneceAlDestino",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/OGD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#TourismDestination"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneOGD"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Pintura",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Pintura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObraDeArte"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/RestoMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Resto Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObjetoArqueológico"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/SeHaceEn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#Itinerary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tour"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneItinerario"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tarifa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tarifa"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarifaBase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "tarifa base"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tarifa"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneTarifaBase"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaComprada",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ActoDeCompra"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "tarjeta comprada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaTurística"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaTurística",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tarjeta Turística"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Templo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Templo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Edificio"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploCristiano",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Templo Cristiano"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Templo"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploIslámico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Templo Islámico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Templo"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploJudío",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Templo Judío"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Templo"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TenerDestinoAsociado",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaTurística"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#TourismDestination"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneTarjeta"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneBienCultural",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#TourismDestination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "tiene bien cultural"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCultural"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneItinerario",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tour"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "tiene itinerario"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#Itinerary"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneTarifaBase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tarifa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifa"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tour"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid15"
+  }, {
+    "@id" : "_:genid16"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/UtensilioTradicional",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Utensilio Tradicional"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObjetoEtnográfico"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Vestimenta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Vestimenta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObjetoEtnográfico"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaBienInmueble",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "visita bien inmueble"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaDestino",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "visita destino"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#TourismDestination"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaEsAcudidaPor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tour"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/esOficinaDe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "esOficinaDe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#TourismDestination"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneOficina"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/fechaCompra",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ActoDeCompra"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "fecha compra"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/precioPagado",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ActoDeCompra"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "precio pagado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/temporada",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "temporada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneAplicacionTarifa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tour"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "tiene aplicacion tarifa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifa"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneOGD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#TourismDestination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "tiene o g d"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/OGD"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneOficina",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#TourismDestination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "tiene oficina"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneTarifa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "tiene tarifa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tarifa"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneTarjeta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/core/#TourismDestination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "tiene tarjeta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaTurística"
+  } ]
+}, {
+  "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tipoVisitante",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "tipo visitante"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mod#createdWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

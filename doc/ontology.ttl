@@ -1,0 +1,717 @@
+@prefix : <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> .
+
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> rdf:type owl:Ontology ;
+                                                                        owl:versionIRI <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/0.1.0> ;
+                                                                        <http://purl.org/dc/terms/created> "2025-11-10"^^xsd:date ;
+                                                                        <http://purl.org/dc/terms/creator> <https://github.com/anxomc> ,
+                                                                                                           <https://w3id.org/people#AContributorURI> ;
+                                                                        <http://purl.org/dc/terms/description> "Extensión de la ontología de SEGITTUR, caso de: Turismo Cultural Material"@es ;
+                                                                        <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                                                        <http://purl.org/dc/terms/title> "Ontología de Turismo Cultural Material (Extensión de SEGITTUR)"@es ;
+                                                                        <http://purl.org/vocab/vann/preferredNamespacePrefix> "segittur" ,
+                                                                                                                              "tcm" ;
+                                                                        <http://purl.org/vocab/vann/preferredNamespaceUri> <https://ontologia.segittur.es/turismo/def/core#> ,
+                                                                                                                           <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> ;
+                                                                        owl:versionInfo "0.1.0" ;
+                                                                        <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AcudeOficina
+:AcudeOficina rdf:type owl:ObjectProperty ;
+              owl:inverseOf :EsAcudidaPor ;
+              rdfs:domain :Persona ;
+              rdfs:range <https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice> ;
+              rdfs:label "acude oficina" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AcudeVisita
+:AcudeVisita rdf:type owl:ObjectProperty ;
+             owl:inverseOf :VisitaEsAcudidaPor ;
+             rdfs:domain :Persona ;
+             rdfs:range :Tour ;
+             rdfs:label "acude visita" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifaAplicada
+:AplicacionTarifaAplicada rdf:type owl:ObjectProperty ;
+                          owl:inverseOf :tieneAplicacionTarifa ;
+                          rdfs:domain :AplicacionTarifa ;
+                          rdfs:range :Tour .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Compra
+:Compra rdf:type owl:ObjectProperty ;
+        owl:inverseOf :EsCompradoPor ;
+        rdfs:domain :Persona ;
+        rdfs:range :ActoDeCompra ;
+        rdfs:label "compra" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/DestinoEsVisitadoPor
+:DestinoEsVisitadoPor rdf:type owl:ObjectProperty ;
+                      owl:inverseOf :VisitaDestino ;
+                      rdfs:domain <https://ontologia.segittur.es/turismo/def/core/#TourismDestination> ;
+                      rdfs:range :Persona .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsAcudidaPor
+:EsAcudidaPor rdf:type owl:ObjectProperty ;
+              rdfs:domain <https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice> ;
+              rdfs:range :Persona .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsCompradaPor
+:EsCompradaPor rdf:type owl:ObjectProperty ;
+               owl:inverseOf :TarjetaComprada ;
+               rdfs:domain :TarjetaTurística ;
+               rdfs:range :ActoDeCompra .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsCompradoPor
+:EsCompradoPor rdf:type owl:ObjectProperty ;
+               rdfs:domain :ActoDeCompra ;
+               rdfs:range :Persona .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsOfrecidaPor
+:EsOfrecidaPor rdf:type owl:ObjectProperty ;
+               owl:inverseOf :OfreceTarjeta ;
+               rdfs:domain :TarjetaTurística ;
+               rdfs:range <https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice> .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsVisitadoPor
+:EsVisitadoPor rdf:type owl:ObjectProperty ;
+               owl:inverseOf :VisitaBienInmueble ;
+               rdfs:domain :BienCulturalInmueble ;
+               rdfs:range :Persona .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EstaDisponibleEn
+:EstaDisponibleEn rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :TieneBienCultural ;
+                  rdfs:domain :BienCultural ;
+                  rdfs:range <https://ontologia.segittur.es/turismo/def/core/#TourismDestination> .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EstaIncluidoEn
+:EstaIncluidoEn rdf:type owl:ObjectProperty ;
+                owl:inverseOf :Incluye ;
+                rdfs:domain :BienCulturalInmueble ;
+                rdfs:range <https://ontologia.segittur.es/turismo/def/core/#Itinerary> .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EstarAsociadaA
+:EstarAsociadaA rdf:type owl:ObjectProperty ;
+                owl:inverseOf :tieneTarifa ;
+                rdfs:domain :Tarifa ;
+                rdfs:range :BienCulturalInmueble .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Incluye
+:Incluye rdf:type owl:ObjectProperty ;
+         rdfs:domain :BienCulturalInmueble ;
+         rdfs:range <https://ontologia.segittur.es/turismo/def/core/#Itinerary> ;
+         rdfs:label "Incluye" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/OfreceTarjeta
+:OfreceTarjeta rdf:type owl:ObjectProperty ;
+               rdfs:domain <https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice> ;
+               rdfs:range :TarjetaTurística ;
+               rdfs:label "ofrece tarjeta" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/PerteneceAlDestino
+:PerteneceAlDestino rdf:type owl:ObjectProperty ;
+                    owl:inverseOf :tieneOGD ;
+                    rdfs:domain :OGD ;
+                    rdfs:range <https://ontologia.segittur.es/turismo/def/core/#TourismDestination> .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/SeHaceEn
+:SeHaceEn rdf:type owl:ObjectProperty ;
+          owl:inverseOf :TieneItinerario ;
+          rdfs:domain <https://ontologia.segittur.es/turismo/def/core/#Itinerary> ;
+          rdfs:range :Tour .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarifaBase
+:TarifaBase rdf:type owl:ObjectProperty ;
+            owl:inverseOf :TieneTarifaBase ;
+            rdfs:domain :AplicacionTarifa ;
+            rdfs:range :Tarifa ;
+            rdfs:label "tarifa base" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaComprada
+:TarjetaComprada rdf:type owl:ObjectProperty ;
+                 rdfs:domain :ActoDeCompra ;
+                 rdfs:range :TarjetaTurística ;
+                 rdfs:label "tarjeta comprada" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TenerDestinoAsociado
+:TenerDestinoAsociado rdf:type owl:ObjectProperty ;
+                      owl:inverseOf :tieneTarjeta ;
+                      rdfs:domain :TarjetaTurística ;
+                      rdfs:range <https://ontologia.segittur.es/turismo/def/core/#TourismDestination> .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneBienCultural
+:TieneBienCultural rdf:type owl:ObjectProperty ;
+                   rdfs:domain <https://ontologia.segittur.es/turismo/def/core/#TourismDestination> ;
+                   rdfs:range :BienCultural ;
+                   rdfs:label "tiene bien cultural" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneItinerario
+:TieneItinerario rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Tour ;
+                 rdfs:range <https://ontologia.segittur.es/turismo/def/core/#Itinerary> ;
+                 rdfs:label "tiene itinerario" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneTarifaBase
+:TieneTarifaBase rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Tarifa ;
+                 rdfs:range :AplicacionTarifa .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaBienInmueble
+:VisitaBienInmueble rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Persona ;
+                    rdfs:range :BienCulturalInmueble ;
+                    rdfs:label "visita bien inmueble" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaDestino
+:VisitaDestino rdf:type owl:ObjectProperty ;
+               rdfs:domain :Persona ;
+               rdfs:range <https://ontologia.segittur.es/turismo/def/core/#TourismDestination> ;
+               rdfs:label "visita destino" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaEsAcudidaPor
+:VisitaEsAcudidaPor rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Tour ;
+                    rdfs:range :Persona .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/esOficinaDe
+:esOficinaDe rdf:type owl:ObjectProperty ;
+             owl:inverseOf :tieneOficina ;
+             rdfs:domain <https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice> ;
+             rdfs:range <https://ontologia.segittur.es/turismo/def/core/#TourismDestination> ;
+             rdfs:label "esOficinaDe"@es .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneAplicacionTarifa
+:tieneAplicacionTarifa rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Tour ;
+                       rdfs:range :AplicacionTarifa ;
+                       rdfs:label "tiene aplicacion tarifa" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneOGD
+:tieneOGD rdf:type owl:ObjectProperty ;
+          rdfs:domain <https://ontologia.segittur.es/turismo/def/core/#TourismDestination> ;
+          rdfs:range :OGD ;
+          rdfs:label "tiene o g d" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneOficina
+:tieneOficina rdf:type owl:ObjectProperty ;
+              rdfs:domain <https://ontologia.segittur.es/turismo/def/core/#TourismDestination> ;
+              rdfs:range <https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice> ;
+              rdfs:label "tiene oficina" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneTarifa
+:tieneTarifa rdf:type owl:ObjectProperty ;
+             rdfs:domain :BienCulturalInmueble ;
+             rdfs:range :Tarifa ;
+             rdfs:label "tiene tarifa" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneTarjeta
+:tieneTarjeta rdf:type owl:ObjectProperty ;
+              rdfs:domain <https://ontologia.segittur.es/turismo/def/core/#TourismDestination> ;
+              rdfs:range :TarjetaTurística ;
+              rdfs:label "tiene tarjeta" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/fechaCompra
+:fechaCompra rdf:type owl:DatatypeProperty ;
+             rdfs:domain :ActoDeCompra ;
+             rdfs:range xsd:date ;
+             rdfs:label "fecha compra" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/precioPagado
+:precioPagado rdf:type owl:DatatypeProperty ;
+              rdfs:domain :ActoDeCompra ;
+              rdfs:range xsd:float ;
+              rdfs:label "precio pagado" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/temporada
+:temporada rdf:type owl:DatatypeProperty ;
+           rdfs:domain :AplicacionTarifa ;
+           rdfs:range xsd:string ;
+           rdfs:label "temporada" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tipoVisitante
+:tipoVisitante rdf:type owl:DatatypeProperty ;
+               rdfs:domain :AplicacionTarifa ;
+               rdfs:range xsd:string ;
+               rdfs:label "tipo visitante" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://ontologia.segittur.es/turismo/def/core/#ArcheologicalSite
+<https://ontologia.segittur.es/turismo/def/core/#ArcheologicalSite> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf :BienCulturalInmueble ;
+                                                                    rdfs:label "Archeological Site" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core/#BullRing
+<https://ontologia.segittur.es/turismo/def/core/#BullRing> rdf:type owl:Class ;
+                                                           rdfs:subClassOf :Edificio ;
+                                                           rdfs:label "Bull Ring" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core/#Cathedral
+<https://ontologia.segittur.es/turismo/def/core/#Cathedral> rdf:type owl:Class ;
+                                                            rdfs:subClassOf :TemploCristiano ;
+                                                            rdfs:label "Cathedral" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core/#Church
+<https://ontologia.segittur.es/turismo/def/core/#Church> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :TemploCristiano ;
+                                                         rdfs:label "Church" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core/#Garden
+<https://ontologia.segittur.es/turismo/def/core/#Garden> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :BienCulturalInmueble ;
+                                                         rdfs:label "Garden" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core/#Itinerary
+<https://ontologia.segittur.es/turismo/def/core/#Itinerary> rdf:type owl:Class ;
+                                                            rdfs:label "Itinerary" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core/#Minaret
+<https://ontologia.segittur.es/turismo/def/core/#Minaret> rdf:type owl:Class ;
+                                                          rdfs:subClassOf :TemploIslámico ;
+                                                          rdfs:label "Minaret" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core/#Monument
+<https://ontologia.segittur.es/turismo/def/core/#Monument> rdf:type owl:Class ;
+                                                           rdfs:subClassOf :BienCulturalInmueble ;
+                                                           rdfs:label "Monument" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core/#Museum
+<https://ontologia.segittur.es/turismo/def/core/#Museum> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :Edificio ;
+                                                         rdfs:label "Museum" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core/#Stadium
+<https://ontologia.segittur.es/turismo/def/core/#Stadium> rdf:type owl:Class ;
+                                                          rdfs:subClassOf :Edificio ;
+                                                          rdfs:label "Stadium" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core/#Synagogue
+<https://ontologia.segittur.es/turismo/def/core/#Synagogue> rdf:type owl:Class ;
+                                                            rdfs:subClassOf :TemploJudío ;
+                                                            rdfs:label "Synagogue" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core/#Theater
+<https://ontologia.segittur.es/turismo/def/core/#Theater> rdf:type owl:Class ;
+                                                          rdfs:subClassOf :Edificio ;
+                                                          rdfs:label "Theater" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core/#TourismDestination
+<https://ontologia.segittur.es/turismo/def/core/#TourismDestination> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty :TieneBienCultural ;
+                                                                                       owl:allValuesFrom :BienCultural
+                                                                                     ] ,
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty :tieneOGD ;
+                                                                                       owl:allValuesFrom :OGD
+                                                                                     ] ,
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty :tieneOficina ;
+                                                                                       owl:allValuesFrom <https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice>
+                                                                                     ] ,
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty :tieneTarjeta ;
+                                                                                       owl:allValuesFrom :TarjetaTurística
+                                                                                     ] ;
+                                                                     rdfs:label "Tourism Destination" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice
+<https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                             owl:onProperty :OfreceTarjeta ;
+                                                                                             owl:allValuesFrom :TarjetaTurística
+                                                                                           ] ;
+                                                                           rdfs:label "Tourist Information Office" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ActoDeCompra
+:ActoDeCompra rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty :TarjetaComprada ;
+                                owl:allValuesFrom :TarjetaTurística
+                              ] ;
+              rdfs:label "Acto De Compra" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifa
+:AplicacionTarifa rdf:type owl:Class ;
+                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                    owl:onProperty :TarifaBase ;
+                                    owl:allValuesFrom :Tarifa
+                                  ] ;
+                  rdfs:label "Aplicacion Tarifa" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ArchivoHistórico
+:ArchivoHistórico rdf:type owl:Class ;
+                  rdfs:subClassOf :Documento ;
+                  rdfs:label "Archivo Histórico" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCultural
+:BienCultural rdf:type owl:Class ;
+              rdfs:comment "Clase raíz de la ontología. Un Bien Cultural representa a objetos e infraestructuras con un peso cultural."@es ;
+              rdfs:label "Bien Cultural" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble
+:BienCulturalInmueble rdf:type owl:Class ;
+                      rdfs:subClassOf :BienCultural ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :Incluye ;
+                                        owl:allValuesFrom <https://ontologia.segittur.es/turismo/def/core/#Itinerary>
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :tieneTarifa ;
+                                        owl:allValuesFrom :Tarifa
+                                      ] ;
+                      owl:disjointWith :BienCulturalMueble ;
+                      rdfs:comment "Bienes culturales que son inamovibles en lo que respecta a su ubicación geográfica."@es ;
+                      rdfs:label "Bien Cultural Inmueble" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalMueble
+:BienCulturalMueble rdf:type owl:Class ;
+                    rdfs:subClassOf :BienCultural ;
+                    rdfs:comment "Bien cultural que puede moverse de localización." ;
+                    rdfs:label "Bien Cultural Mueble" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/CentroHistórico
+:CentroHistórico rdf:type owl:Class ;
+                 rdfs:subClassOf :BienCulturalInmueble ;
+                 rdfs:label "Centro Histórico" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Cerámica
+:Cerámica rdf:type owl:Class ;
+          rdfs:subClassOf :ObjetoArqueológico ;
+          rdfs:label "Cerámica" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Documento
+:Documento rdf:type owl:Class ;
+           rdfs:subClassOf :BienCulturalMueble ;
+           rdfs:label "Documento" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Edificio
+:Edificio rdf:type owl:Class ;
+          rdfs:subClassOf :BienCulturalInmueble ;
+          rdfs:label "Edificio" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Escultura
+:Escultura rdf:type owl:Class ;
+           rdfs:subClassOf :ObraDeArte ;
+           rdfs:label "Escultura" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Establecimiento
+:Establecimiento rdf:type owl:Class ;
+                 rdfs:subClassOf :Edificio ;
+                 rdfs:label "Establecimiento" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Herramienta
+:Herramienta rdf:type owl:Class ;
+             rdfs:subClassOf :ObjetoArqueológico ;
+             rdfs:label "Herramienta" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoCientíficoTécnico
+:InstrumentoCientíficoTécnico rdf:type owl:Class ;
+                              rdfs:subClassOf :BienCulturalMueble ;
+                              rdfs:label "Instrumento Científico Técnico" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoEléctrico
+:InstrumentoEléctrico rdf:type owl:Class ;
+                      rdfs:subClassOf :InstrumentoCientíficoTécnico ;
+                      owl:disjointWith :InstrumentoNoEléctrico ;
+                      rdfs:label "Instrumento Eléctrico" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoMusical
+:InstrumentoMusical rdf:type owl:Class ;
+                    rdfs:subClassOf :ObjetoEtnográfico ;
+                    rdfs:label "Instrumento Musical" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoNoEléctrico
+:InstrumentoNoEléctrico rdf:type owl:Class ;
+                        rdfs:subClassOf :InstrumentoCientíficoTécnico ;
+                        rdfs:label "Instrumento No Eléctrico" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Libro
+:Libro rdf:type owl:Class ;
+       rdfs:subClassOf :Documento ;
+       rdfs:label "Libro" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Manuscrito
+:Manuscrito rdf:type owl:Class ;
+            rdfs:subClassOf :Documento ;
+            rdfs:label "Manuscrito" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Mapa
+:Mapa rdf:type owl:Class ;
+      rdfs:subClassOf :Documento ;
+      rdfs:label "Mapa" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/MonumentoCivil
+:MonumentoCivil rdf:type owl:Class ;
+                rdfs:subClassOf <https://ontologia.segittur.es/turismo/def/core/#Monument> ;
+                rdfs:label "Monumento Civil" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/MonumentoMilitar
+:MonumentoMilitar rdf:type owl:Class ;
+                  rdfs:subClassOf <https://ontologia.segittur.es/turismo/def/core/#Monument> ;
+                  rdfs:label "Monumento Militar" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/MonumentoReligioso
+:MonumentoReligioso rdf:type owl:Class ;
+                    rdfs:subClassOf <https://ontologia.segittur.es/turismo/def/core/#Monument> ;
+                    rdfs:label "Monumento Religioso" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/OGD
+:OGD rdf:type owl:Class ;
+     rdfs:label "O G D" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObjetoArqueológico
+:ObjetoArqueológico rdf:type owl:Class ;
+                    rdfs:subClassOf :BienCulturalMueble ;
+                    rdfs:label "Objeto Arqueológico" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObjetoEtnográfico
+:ObjetoEtnográfico rdf:type owl:Class ;
+                   rdfs:subClassOf :BienCulturalMueble ;
+                   rdfs:label "Objeto Etnográfico" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObraDeArte
+:ObraDeArte rdf:type owl:Class ;
+            rdfs:subClassOf :BienCulturalMueble ;
+            rdfs:label "Obra De Arte" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona
+:Persona rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :AcudeOficina ;
+                           owl:allValuesFrom <https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice>
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :AcudeVisita ;
+                           owl:allValuesFrom :Tour
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :Compra ;
+                           owl:allValuesFrom :ActoDeCompra
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :VisitaBienInmueble ;
+                           owl:allValuesFrom :BienCulturalInmueble
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :VisitaDestino ;
+                           owl:allValuesFrom <https://ontologia.segittur.es/turismo/def/core/#TourismDestination>
+                         ] ;
+         rdfs:label "Persona" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Pintura
+:Pintura rdf:type owl:Class ;
+         rdfs:subClassOf :ObraDeArte ;
+         rdfs:label "Pintura" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/RestoMaterial
+:RestoMaterial rdf:type owl:Class ;
+               rdfs:subClassOf :ObjetoArqueológico ;
+               rdfs:label "Resto Material" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tarifa
+:Tarifa rdf:type owl:Class ;
+        rdfs:label "Tarifa" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaTurística
+:TarjetaTurística rdf:type owl:Class ;
+                  rdfs:label "Tarjeta Turística" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Templo
+:Templo rdf:type owl:Class ;
+        rdfs:subClassOf :Edificio ;
+        rdfs:label "Templo" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploCristiano
+:TemploCristiano rdf:type owl:Class ;
+                 rdfs:subClassOf :Templo ;
+                 rdfs:label "Templo Cristiano" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploIslámico
+:TemploIslámico rdf:type owl:Class ;
+                rdfs:subClassOf :Templo ;
+                rdfs:label "Templo Islámico" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploJudío
+:TemploJudío rdf:type owl:Class ;
+             rdfs:subClassOf :Templo ;
+             rdfs:label "Templo Judío" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tour
+:Tour rdf:type owl:Class ;
+      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                        owl:onProperty :TieneItinerario ;
+                        owl:allValuesFrom <https://ontologia.segittur.es/turismo/def/core/#Itinerary>
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :tieneAplicacionTarifa ;
+                        owl:allValuesFrom :AplicacionTarifa
+                      ] ;
+      rdfs:label "Tour" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/UtensilioTradicional
+:UtensilioTradicional rdf:type owl:Class ;
+                      rdfs:subClassOf :ObjetoEtnográfico ;
+                      rdfs:label "Utensilio Tradicional" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Vestimenta
+:Vestimenta rdf:type owl:Class ;
+            rdfs:subClassOf :ObjetoEtnográfico ;
+            rdfs:label "Vestimenta" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

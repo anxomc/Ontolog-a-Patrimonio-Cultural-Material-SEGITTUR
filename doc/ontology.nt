@@ -1,0 +1,633 @@
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> <http://www.w3.org/2002/07/owl#versionIRI> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/0.1.0> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> <http://purl.org/dc/terms/created> "2025-11-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> <http://purl.org/dc/terms/creator> <https://github.com/anxomc> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> <http://purl.org/dc/terms/creator> <https://w3id.org/people#AContributorURI> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> <http://purl.org/dc/terms/description> "Extensión de la ontología de SEGITTUR, caso de: Turismo Cultural Material"@es .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> <http://purl.org/dc/terms/title> "Ontología de Turismo Cultural Material (Extensión de SEGITTUR)"@es .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "segittur" .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "tcm" .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://ontologia.segittur.es/turismo/def/core#> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionIRI
+<http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AcudeOficina
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AcudeOficina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AcudeOficina> <http://www.w3.org/2002/07/owl#inverseOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsAcudidaPor> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AcudeOficina> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AcudeOficina> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AcudeOficina> <http://www.w3.org/2000/01/rdf-schema#label> "acude oficina" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AcudeVisita
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AcudeVisita> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AcudeVisita> <http://www.w3.org/2002/07/owl#inverseOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaEsAcudidaPor> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AcudeVisita> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AcudeVisita> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tour> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AcudeVisita> <http://www.w3.org/2000/01/rdf-schema#label> "acude visita" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifaAplicada
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifaAplicada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifaAplicada> <http://www.w3.org/2002/07/owl#inverseOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneAplicacionTarifa> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifaAplicada> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifa> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifaAplicada> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tour> .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Compra
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Compra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Compra> <http://www.w3.org/2002/07/owl#inverseOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsCompradoPor> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Compra> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Compra> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ActoDeCompra> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Compra> <http://www.w3.org/2000/01/rdf-schema#label> "compra" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/DestinoEsVisitadoPor
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/DestinoEsVisitadoPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/DestinoEsVisitadoPor> <http://www.w3.org/2002/07/owl#inverseOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaDestino> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/DestinoEsVisitadoPor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/core/#TourismDestination> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/DestinoEsVisitadoPor> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona> .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsAcudidaPor
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsAcudidaPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsAcudidaPor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsAcudidaPor> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona> .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsCompradaPor
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsCompradaPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsCompradaPor> <http://www.w3.org/2002/07/owl#inverseOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaComprada> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsCompradaPor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaTurística> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsCompradaPor> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ActoDeCompra> .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsCompradoPor
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsCompradoPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsCompradoPor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ActoDeCompra> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsCompradoPor> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona> .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsOfrecidaPor
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsOfrecidaPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsOfrecidaPor> <http://www.w3.org/2002/07/owl#inverseOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/OfreceTarjeta> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsOfrecidaPor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaTurística> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsOfrecidaPor> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice> .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsVisitadoPor
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsVisitadoPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsVisitadoPor> <http://www.w3.org/2002/07/owl#inverseOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaBienInmueble> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsVisitadoPor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsVisitadoPor> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona> .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EstaDisponibleEn
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EstaDisponibleEn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EstaDisponibleEn> <http://www.w3.org/2002/07/owl#inverseOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneBienCultural> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EstaDisponibleEn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCultural> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EstaDisponibleEn> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/core/#TourismDestination> .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EstaIncluidoEn
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EstaIncluidoEn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EstaIncluidoEn> <http://www.w3.org/2002/07/owl#inverseOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Incluye> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EstaIncluidoEn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EstaIncluidoEn> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/core/#Itinerary> .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EstarAsociadaA
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EstarAsociadaA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EstarAsociadaA> <http://www.w3.org/2002/07/owl#inverseOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneTarifa> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EstarAsociadaA> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tarifa> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EstarAsociadaA> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble> .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Incluye
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Incluye> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Incluye> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Incluye> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/core/#Itinerary> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Incluye> <http://www.w3.org/2000/01/rdf-schema#label> "Incluye" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/OfreceTarjeta
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/OfreceTarjeta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/OfreceTarjeta> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/OfreceTarjeta> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaTurística> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/OfreceTarjeta> <http://www.w3.org/2000/01/rdf-schema#label> "ofrece tarjeta" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/PerteneceAlDestino
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/PerteneceAlDestino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/PerteneceAlDestino> <http://www.w3.org/2002/07/owl#inverseOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneOGD> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/PerteneceAlDestino> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/OGD> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/PerteneceAlDestino> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/core/#TourismDestination> .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/SeHaceEn
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/SeHaceEn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/SeHaceEn> <http://www.w3.org/2002/07/owl#inverseOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneItinerario> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/SeHaceEn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/core/#Itinerary> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/SeHaceEn> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tour> .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarifaBase
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarifaBase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarifaBase> <http://www.w3.org/2002/07/owl#inverseOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneTarifaBase> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarifaBase> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifa> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarifaBase> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tarifa> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarifaBase> <http://www.w3.org/2000/01/rdf-schema#label> "tarifa base" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaComprada
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaComprada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaComprada> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ActoDeCompra> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaComprada> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaTurística> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaComprada> <http://www.w3.org/2000/01/rdf-schema#label> "tarjeta comprada" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TenerDestinoAsociado
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TenerDestinoAsociado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TenerDestinoAsociado> <http://www.w3.org/2002/07/owl#inverseOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneTarjeta> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TenerDestinoAsociado> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaTurística> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TenerDestinoAsociado> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/core/#TourismDestination> .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneBienCultural
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneBienCultural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneBienCultural> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/core/#TourismDestination> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneBienCultural> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCultural> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneBienCultural> <http://www.w3.org/2000/01/rdf-schema#label> "tiene bien cultural" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneItinerario
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneItinerario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneItinerario> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tour> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneItinerario> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/core/#Itinerary> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneItinerario> <http://www.w3.org/2000/01/rdf-schema#label> "tiene itinerario" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneTarifaBase
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneTarifaBase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneTarifaBase> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tarifa> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneTarifaBase> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifa> .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaBienInmueble
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaBienInmueble> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaBienInmueble> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaBienInmueble> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaBienInmueble> <http://www.w3.org/2000/01/rdf-schema#label> "visita bien inmueble" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaDestino
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaDestino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaDestino> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaDestino> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/core/#TourismDestination> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaDestino> <http://www.w3.org/2000/01/rdf-schema#label> "visita destino" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaEsAcudidaPor
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaEsAcudidaPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaEsAcudidaPor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tour> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaEsAcudidaPor> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona> .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/esOficinaDe
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/esOficinaDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/esOficinaDe> <http://www.w3.org/2002/07/owl#inverseOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneOficina> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/esOficinaDe> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/esOficinaDe> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/core/#TourismDestination> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/esOficinaDe> <http://www.w3.org/2000/01/rdf-schema#label> "esOficinaDe"@es .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneAplicacionTarifa
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneAplicacionTarifa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneAplicacionTarifa> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tour> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneAplicacionTarifa> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifa> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneAplicacionTarifa> <http://www.w3.org/2000/01/rdf-schema#label> "tiene aplicacion tarifa" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneOGD
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneOGD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneOGD> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/core/#TourismDestination> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneOGD> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/OGD> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneOGD> <http://www.w3.org/2000/01/rdf-schema#label> "tiene o g d" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneOficina
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneOficina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneOficina> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/core/#TourismDestination> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneOficina> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneOficina> <http://www.w3.org/2000/01/rdf-schema#label> "tiene oficina" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneTarifa
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneTarifa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneTarifa> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneTarifa> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tarifa> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneTarifa> <http://www.w3.org/2000/01/rdf-schema#label> "tiene tarifa" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneTarjeta
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneTarjeta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneTarjeta> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/core/#TourismDestination> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneTarjeta> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaTurística> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneTarjeta> <http://www.w3.org/2000/01/rdf-schema#label> "tiene tarjeta" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/fechaCompra
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/fechaCompra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/fechaCompra> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ActoDeCompra> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/fechaCompra> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/fechaCompra> <http://www.w3.org/2000/01/rdf-schema#label> "fecha compra" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/precioPagado
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/precioPagado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/precioPagado> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ActoDeCompra> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/precioPagado> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/precioPagado> <http://www.w3.org/2000/01/rdf-schema#label> "precio pagado" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/temporada
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/temporada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/temporada> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifa> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/temporada> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/temporada> <http://www.w3.org/2000/01/rdf-schema#label> "temporada" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tipoVisitante
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tipoVisitante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tipoVisitante> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifa> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tipoVisitante> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tipoVisitante> <http://www.w3.org/2000/01/rdf-schema#label> "tipo visitante" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://ontologia.segittur.es/turismo/def/core/#ArcheologicalSite
+<https://ontologia.segittur.es/turismo/def/core/#ArcheologicalSite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core/#ArcheologicalSite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble> .
+<https://ontologia.segittur.es/turismo/def/core/#ArcheologicalSite> <http://www.w3.org/2000/01/rdf-schema#label> "Archeological Site" .
+# 
+# https://ontologia.segittur.es/turismo/def/core/#BullRing
+<https://ontologia.segittur.es/turismo/def/core/#BullRing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core/#BullRing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Edificio> .
+<https://ontologia.segittur.es/turismo/def/core/#BullRing> <http://www.w3.org/2000/01/rdf-schema#label> "Bull Ring" .
+# 
+# https://ontologia.segittur.es/turismo/def/core/#Cathedral
+<https://ontologia.segittur.es/turismo/def/core/#Cathedral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core/#Cathedral> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploCristiano> .
+<https://ontologia.segittur.es/turismo/def/core/#Cathedral> <http://www.w3.org/2000/01/rdf-schema#label> "Cathedral" .
+# 
+# https://ontologia.segittur.es/turismo/def/core/#Church
+<https://ontologia.segittur.es/turismo/def/core/#Church> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core/#Church> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploCristiano> .
+<https://ontologia.segittur.es/turismo/def/core/#Church> <http://www.w3.org/2000/01/rdf-schema#label> "Church" .
+# 
+# https://ontologia.segittur.es/turismo/def/core/#Garden
+<https://ontologia.segittur.es/turismo/def/core/#Garden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core/#Garden> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble> .
+<https://ontologia.segittur.es/turismo/def/core/#Garden> <http://www.w3.org/2000/01/rdf-schema#label> "Garden" .
+# 
+# https://ontologia.segittur.es/turismo/def/core/#Itinerary
+<https://ontologia.segittur.es/turismo/def/core/#Itinerary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core/#Itinerary> <http://www.w3.org/2000/01/rdf-schema#label> "Itinerary" .
+# 
+# https://ontologia.segittur.es/turismo/def/core/#Minaret
+<https://ontologia.segittur.es/turismo/def/core/#Minaret> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core/#Minaret> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploIslámico> .
+<https://ontologia.segittur.es/turismo/def/core/#Minaret> <http://www.w3.org/2000/01/rdf-schema#label> "Minaret" .
+# 
+# https://ontologia.segittur.es/turismo/def/core/#Monument
+<https://ontologia.segittur.es/turismo/def/core/#Monument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core/#Monument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble> .
+<https://ontologia.segittur.es/turismo/def/core/#Monument> <http://www.w3.org/2000/01/rdf-schema#label> "Monument" .
+# 
+# https://ontologia.segittur.es/turismo/def/core/#Museum
+<https://ontologia.segittur.es/turismo/def/core/#Museum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core/#Museum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Edificio> .
+<https://ontologia.segittur.es/turismo/def/core/#Museum> <http://www.w3.org/2000/01/rdf-schema#label> "Museum" .
+# 
+# https://ontologia.segittur.es/turismo/def/core/#Stadium
+<https://ontologia.segittur.es/turismo/def/core/#Stadium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core/#Stadium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Edificio> .
+<https://ontologia.segittur.es/turismo/def/core/#Stadium> <http://www.w3.org/2000/01/rdf-schema#label> "Stadium" .
+# 
+# https://ontologia.segittur.es/turismo/def/core/#Synagogue
+<https://ontologia.segittur.es/turismo/def/core/#Synagogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core/#Synagogue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploJudío> .
+<https://ontologia.segittur.es/turismo/def/core/#Synagogue> <http://www.w3.org/2000/01/rdf-schema#label> "Synagogue" .
+# 
+# https://ontologia.segittur.es/turismo/def/core/#Theater
+<https://ontologia.segittur.es/turismo/def/core/#Theater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core/#Theater> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Edificio> .
+<https://ontologia.segittur.es/turismo/def/core/#Theater> <http://www.w3.org/2000/01/rdf-schema#label> "Theater" .
+# 
+# https://ontologia.segittur.es/turismo/def/core/#TourismDestination
+<https://ontologia.segittur.es/turismo/def/core/#TourismDestination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core/#TourismDestination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCultural> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneBienCultural> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontologia.segittur.es/turismo/def/core/#TourismDestination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/OGD> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneOGD> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontologia.segittur.es/turismo/def/core/#TourismDestination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneOficina> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontologia.segittur.es/turismo/def/core/#TourismDestination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaTurística> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneTarjeta> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontologia.segittur.es/turismo/def/core/#TourismDestination> <http://www.w3.org/2000/01/rdf-schema#label> "Tourism Destination" .
+# 
+# https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice
+<https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaTurística> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/OfreceTarjeta> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice> <http://www.w3.org/2000/01/rdf-schema#label> "Tourist Information Office" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ActoDeCompra
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ActoDeCompra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ActoDeCompra> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaTurística> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaComprada> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ActoDeCompra> <http://www.w3.org/2000/01/rdf-schema#label> "Acto De Compra" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifa
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tarifa> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarifaBase> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifa> <http://www.w3.org/2000/01/rdf-schema#label> "Aplicacion Tarifa" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ArchivoHistórico
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ArchivoHistórico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ArchivoHistórico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Documento> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ArchivoHistórico> <http://www.w3.org/2000/01/rdf-schema#label> "Archivo Histórico" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCultural
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCultural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCultural> <http://www.w3.org/2000/01/rdf-schema#comment> "Clase raíz de la ontología. Un Bien Cultural representa a objetos e infraestructuras con un peso cultural."@es .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCultural> <http://www.w3.org/2000/01/rdf-schema#label> "Bien Cultural" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCultural> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://ontologia.segittur.es/turismo/def/core/#Itinerary> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Incluye> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tarifa> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneTarifa> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble> <http://www.w3.org/2002/07/owl#disjointWith> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalMueble> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble> <http://www.w3.org/2000/01/rdf-schema#comment> "Bienes culturales que son inamovibles en lo que respecta a su ubicación geográfica."@es .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble> <http://www.w3.org/2000/01/rdf-schema#label> "Bien Cultural Inmueble" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalMueble
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalMueble> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalMueble> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCultural> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalMueble> <http://www.w3.org/2000/01/rdf-schema#comment> "Bien cultural que puede moverse de localización." .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalMueble> <http://www.w3.org/2000/01/rdf-schema#label> "Bien Cultural Mueble" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/CentroHistórico
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/CentroHistórico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/CentroHistórico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/CentroHistórico> <http://www.w3.org/2000/01/rdf-schema#label> "Centro Histórico" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Cerámica
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Cerámica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Cerámica> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObjetoArqueológico> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Cerámica> <http://www.w3.org/2000/01/rdf-schema#label> "Cerámica" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Documento
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Documento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Documento> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalMueble> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Documento> <http://www.w3.org/2000/01/rdf-schema#label> "Documento" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Edificio
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Edificio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Edificio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Edificio> <http://www.w3.org/2000/01/rdf-schema#label> "Edificio" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Escultura
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Escultura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Escultura> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObraDeArte> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Escultura> <http://www.w3.org/2000/01/rdf-schema#label> "Escultura" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Establecimiento
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Establecimiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Establecimiento> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Edificio> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Establecimiento> <http://www.w3.org/2000/01/rdf-schema#label> "Establecimiento" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Herramienta
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Herramienta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Herramienta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObjetoArqueológico> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Herramienta> <http://www.w3.org/2000/01/rdf-schema#label> "Herramienta" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoCientíficoTécnico
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoCientíficoTécnico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoCientíficoTécnico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalMueble> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoCientíficoTécnico> <http://www.w3.org/2000/01/rdf-schema#label> "Instrumento Científico Técnico" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoEléctrico
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoEléctrico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoEléctrico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoCientíficoTécnico> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoEléctrico> <http://www.w3.org/2002/07/owl#disjointWith> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoNoEléctrico> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoEléctrico> <http://www.w3.org/2000/01/rdf-schema#label> "Instrumento Eléctrico" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoMusical
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoMusical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoMusical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObjetoEtnográfico> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoMusical> <http://www.w3.org/2000/01/rdf-schema#label> "Instrumento Musical" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoNoEléctrico
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoNoEléctrico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoNoEléctrico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoCientíficoTécnico> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoNoEléctrico> <http://www.w3.org/2000/01/rdf-schema#label> "Instrumento No Eléctrico" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Libro
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Libro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Libro> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Documento> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Libro> <http://www.w3.org/2000/01/rdf-schema#label> "Libro" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Manuscrito
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Manuscrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Manuscrito> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Documento> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Manuscrito> <http://www.w3.org/2000/01/rdf-schema#label> "Manuscrito" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Mapa
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Mapa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Mapa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Documento> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Mapa> <http://www.w3.org/2000/01/rdf-schema#label> "Mapa" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/MonumentoCivil
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/MonumentoCivil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/MonumentoCivil> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/core/#Monument> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/MonumentoCivil> <http://www.w3.org/2000/01/rdf-schema#label> "Monumento Civil" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/MonumentoMilitar
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/MonumentoMilitar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/MonumentoMilitar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/core/#Monument> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/MonumentoMilitar> <http://www.w3.org/2000/01/rdf-schema#label> "Monumento Militar" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/MonumentoReligioso
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/MonumentoReligioso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/MonumentoReligioso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/core/#Monument> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/MonumentoReligioso> <http://www.w3.org/2000/01/rdf-schema#label> "Monumento Religioso" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/OGD
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/OGD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/OGD> <http://www.w3.org/2000/01/rdf-schema#label> "O G D" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObjetoArqueológico
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObjetoArqueológico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObjetoArqueológico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalMueble> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObjetoArqueológico> <http://www.w3.org/2000/01/rdf-schema#label> "Objeto Arqueológico" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObjetoEtnográfico
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObjetoEtnográfico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObjetoEtnográfico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalMueble> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObjetoEtnográfico> <http://www.w3.org/2000/01/rdf-schema#label> "Objeto Etnográfico" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObraDeArte
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObraDeArte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObraDeArte> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalMueble> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObraDeArte> <http://www.w3.org/2000/01/rdf-schema#label> "Obra De Arte" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://ontologia.segittur.es/turismo/def/core/#TouristInformationOffice> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AcudeOficina> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tour> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AcudeVisita> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ActoDeCompra> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Compra> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/BienCulturalInmueble> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaBienInmueble> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://ontologia.segittur.es/turismo/def/core/#TourismDestination> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaDestino> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Persona> <http://www.w3.org/2000/01/rdf-schema#label> "Persona" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Pintura
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Pintura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Pintura> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObraDeArte> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Pintura> <http://www.w3.org/2000/01/rdf-schema#label> "Pintura" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/RestoMaterial
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/RestoMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/RestoMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObjetoArqueológico> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/RestoMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Resto Material" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tarifa
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tarifa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tarifa> <http://www.w3.org/2000/01/rdf-schema#label> "Tarifa" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaTurística
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaTurística> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarjetaTurística> <http://www.w3.org/2000/01/rdf-schema#label> "Tarjeta Turística" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Templo
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Templo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Templo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Edificio> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Templo> <http://www.w3.org/2000/01/rdf-schema#label> "Templo" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploCristiano
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploCristiano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploCristiano> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Templo> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploCristiano> <http://www.w3.org/2000/01/rdf-schema#label> "Templo Cristiano" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploIslámico
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploIslámico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploIslámico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Templo> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploIslámico> <http://www.w3.org/2000/01/rdf-schema#label> "Templo Islámico" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploJudío
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploJudío> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploJudío> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Templo> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TemploJudío> <http://www.w3.org/2000/01/rdf-schema#label> "Templo Judío" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tour
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tour> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://ontologia.segittur.es/turismo/def/core/#Itinerary> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneItinerario> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tour> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifa> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneAplicacionTarifa> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Tour> <http://www.w3.org/2000/01/rdf-schema#label> "Tour" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/UtensilioTradicional
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/UtensilioTradicional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/UtensilioTradicional> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObjetoEtnográfico> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/UtensilioTradicional> <http://www.w3.org/2000/01/rdf-schema#label> "Utensilio Tradicional" .
+# 
+# https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Vestimenta
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Vestimenta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Vestimenta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/turismo-cultural-material/ObjetoEtnográfico> .
+<https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Vestimenta> <http://www.w3.org/2000/01/rdf-schema#label> "Vestimenta" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
