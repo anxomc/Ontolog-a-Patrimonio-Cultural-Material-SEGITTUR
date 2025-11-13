@@ -9,4 +9,4 @@ El desarrollo sigue la [**metodología NeOn**](https://oeg.fi.upm.es/index.php/e
 ## Componentes del Proyecto
 * **`/modelo-conceptual`**: Archivos `.drawio` del diagrama CHOWLK.
 * **`/ontologia`**: Archivo `.ttl` de la ontología OWL implementada.
-* **`/documentacion`**: Informe del proyecto, incluyendo la especificación de requisitos y la evaluación OOPS.
+* **`/documentacion`**: Informe del proyecto, incluyendo la especificación de requisitos y la evaluación OOPS. Para visualizar la documentación de widoco en el formato correcto es necesario descargar la carpeta doc de la rama main y después abrir el archivo doc/widoco_documentation.html.
