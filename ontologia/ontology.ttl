@@ -84,6 +84,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AcudeOficina
 tcm:AcudeOficina rdf:type owl:ObjectProperty ;
+                 owl:inverseOf tcm:EsAcudidaPor ;
                  rdfs:domain tcm:Persona ;
                  rdfs:range segittur:TouristInformationOffice ;
                  rdfs:label "acude oficina" .
@@ -91,16 +92,93 @@ tcm:AcudeOficina rdf:type owl:ObjectProperty ;
 
 ###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AcudeVisita
 tcm:AcudeVisita rdf:type owl:ObjectProperty ;
+                owl:inverseOf tcm:VisitaEsAcudidaPor ;
                 rdfs:domain tcm:Persona ;
                 rdfs:range tcm:Tour ;
                 rdfs:label "acude visita" .
 
 
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/AplicacionTarifaAplicada
+tcm:AplicacionTarifaAplicada rdf:type owl:ObjectProperty ;
+                             owl:inverseOf tcm:tieneAplicacionTarifa ;
+                             rdfs:domain tcm:AplicacionTarifa ;
+                             rdfs:range tcm:Tour .
+
+
 ###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Compra
 tcm:Compra rdf:type owl:ObjectProperty ;
+           owl:inverseOf tcm:EsCompradoPor ;
            rdfs:domain tcm:Persona ;
            rdfs:range tcm:ActoDeCompra ;
            rdfs:label "compra" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/DestinoEsVisitadoPor
+tcm:DestinoEsVisitadoPor rdf:type owl:ObjectProperty ;
+                         owl:inverseOf tcm:VisitaDestino ;
+                         rdfs:domain segittur:TourismDestination ;
+                         rdfs:range tcm:Persona .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsAcudidaPor
+tcm:EsAcudidaPor rdf:type owl:ObjectProperty ;
+                 rdfs:domain segittur:TouristInformationOffice ;
+                 rdfs:range tcm:Persona .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsCompradaPor
+tcm:EsCompradaPor rdf:type owl:ObjectProperty ;
+                  owl:inverseOf tcm:TarjetaComprada ;
+                  rdfs:domain tcm:TarjetaTurística ;
+                  rdfs:range tcm:ActoDeCompra .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsCompradoPor
+tcm:EsCompradoPor rdf:type owl:ObjectProperty ;
+                  rdfs:domain tcm:ActoDeCompra ;
+                  rdfs:range tcm:Persona .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsOfrecidaPor
+tcm:EsOfrecidaPor rdf:type owl:ObjectProperty ;
+                  owl:inverseOf tcm:OfreceTarjeta ;
+                  rdfs:domain tcm:TarjetaTurística ;
+                  rdfs:range segittur:TouristInformationOffice .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EsVisitadoPor
+tcm:EsVisitadoPor rdf:type owl:ObjectProperty ;
+                  owl:inverseOf tcm:VisitaBienInmueble ;
+                  rdfs:domain tcm:BienCulturalInmueble ;
+                  rdfs:range tcm:Persona .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EstaDisponibleEn
+tcm:EstaDisponibleEn rdf:type owl:ObjectProperty ;
+                     owl:inverseOf tcm:TieneBienCultural ;
+                     rdfs:domain tcm:BienCultural ;
+                     rdfs:range segittur:TourismDestination .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EstaIncluidoEn
+tcm:EstaIncluidoEn rdf:type owl:ObjectProperty ;
+                   owl:inverseOf tcm:Incluye ;
+                   rdfs:domain tcm:BienCulturalInmueble ;
+                   rdfs:range segittur:Itinerary .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/EstarAsociadaA
+tcm:EstarAsociadaA rdf:type owl:ObjectProperty ;
+                   owl:inverseOf tcm:tieneTarifa ;
+                   rdfs:domain tcm:Tarifa ;
+                   rdfs:range tcm:BienCulturalInmueble .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/Incluye
+tcm:Incluye rdf:type owl:ObjectProperty ;
+            rdfs:domain tcm:BienCulturalInmueble ;
+            rdfs:range segittur:Itinerary ;
+            rdfs:label "Incluye" .
 
 
 ###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/OfreceTarjeta
@@ -110,8 +188,23 @@ tcm:OfreceTarjeta rdf:type owl:ObjectProperty ;
                   rdfs:label "ofrece tarjeta" .
 
 
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/PerteneceAlDestino
+tcm:PerteneceAlDestino rdf:type owl:ObjectProperty ;
+                       owl:inverseOf tcm:tieneOGD ;
+                       rdfs:domain tcm:OGD ;
+                       rdfs:range segittur:TourismDestination .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/SeHaceEn
+tcm:SeHaceEn rdf:type owl:ObjectProperty ;
+             owl:inverseOf tcm:TieneItinerario ;
+             rdfs:domain segittur:Itinerary ;
+             rdfs:range tcm:Tour .
+
+
 ###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TarifaBase
 tcm:TarifaBase rdf:type owl:ObjectProperty ;
+               owl:inverseOf tcm:TieneTarifaBase ;
                rdfs:domain tcm:AplicacionTarifa ;
                rdfs:range tcm:Tarifa ;
                rdfs:label "tarifa base" .
@@ -124,6 +217,13 @@ tcm:TarjetaComprada rdf:type owl:ObjectProperty ;
                     rdfs:label "tarjeta comprada" .
 
 
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TenerDestinoAsociado
+tcm:TenerDestinoAsociado rdf:type owl:ObjectProperty ;
+                         owl:inverseOf tcm:tieneTarjeta ;
+                         rdfs:domain tcm:TarjetaTurística ;
+                         rdfs:range segittur:TourismDestination .
+
+
 ###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneBienCultural
 tcm:TieneBienCultural rdf:type owl:ObjectProperty ;
                       rdfs:domain segittur:TourismDestination ;
@@ -131,18 +231,17 @@ tcm:TieneBienCultural rdf:type owl:ObjectProperty ;
                       rdfs:label "tiene bien cultural" .
 
 
-###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneHorario
-tcm:TieneHorario rdf:type owl:ObjectProperty ;
-                 rdfs:domain tcm:BienCulturalInmueble ;
-                 rdfs:range segittur:Itinerary ;
-                 rdfs:label "tiene horario" .
-
-
 ###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneItinerario
 tcm:TieneItinerario rdf:type owl:ObjectProperty ;
                     rdfs:domain tcm:Tour ;
                     rdfs:range segittur:Itinerary ;
                     rdfs:label "tiene itinerario" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/TieneTarifaBase
+tcm:TieneTarifaBase rdf:type owl:ObjectProperty ;
+                    rdfs:domain tcm:Tarifa ;
+                    rdfs:range tcm:AplicacionTarifa .
 
 
 ###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaBienInmueble
@@ -157,6 +256,20 @@ tcm:VisitaDestino rdf:type owl:ObjectProperty ;
                   rdfs:domain tcm:Persona ;
                   rdfs:range segittur:TourismDestination ;
                   rdfs:label "visita destino" .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/VisitaEsAcudidaPor
+tcm:VisitaEsAcudidaPor rdf:type owl:ObjectProperty ;
+                       rdfs:domain tcm:Tour ;
+                       rdfs:range tcm:Persona .
+
+
+###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/esOficinaDe
+tcm:esOficinaDe rdf:type owl:ObjectProperty ;
+                owl:inverseOf tcm:tieneOficina ;
+                rdfs:domain segittur:TouristInformationOffice ;
+                rdfs:range segittur:TourismDestination ;
+                rdfs:label "esOficinaDe"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tieneAplicacionTarifa
@@ -200,21 +313,29 @@ tcm:tieneTarjeta rdf:type owl:ObjectProperty ;
 
 ###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/fechaCompra
 tcm:fechaCompra rdf:type owl:DatatypeProperty ;
+                rdfs:domain tcm:ActoDeCompra ;
+                rdfs:range xsd:date ;
                 rdfs:label "fecha compra" .
 
 
 ###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/precioPagado
 tcm:precioPagado rdf:type owl:DatatypeProperty ;
+                 rdfs:domain tcm:ActoDeCompra ;
+                 rdfs:range xsd:float ;
                  rdfs:label "precio pagado" .
 
 
 ###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/temporada
 tcm:temporada rdf:type owl:DatatypeProperty ;
+              rdfs:domain tcm:AplicacionTarifa ;
+              rdfs:range xsd:string ;
               rdfs:label "temporada" .
 
 
 ###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/tipoVisitante
 tcm:tipoVisitante rdf:type owl:DatatypeProperty ;
+                  rdfs:domain tcm:AplicacionTarifa ;
+                  rdfs:range xsd:string ;
                   rdfs:label "tipo visitante" .
 
 
@@ -357,14 +478,15 @@ tcm:BienCultural rdf:type owl:Class ;
 tcm:BienCulturalInmueble rdf:type owl:Class ;
                          rdfs:subClassOf tcm:BienCultural ,
                                          [ rdf:type owl:Restriction ;
-                                           owl:onProperty tcm:TieneHorario ;
+                                           owl:onProperty tcm:Incluye ;
                                            owl:allValuesFrom segittur:Itinerary
                                          ] ,
                                          [ rdf:type owl:Restriction ;
                                            owl:onProperty tcm:tieneTarifa ;
                                            owl:allValuesFrom tcm:Tarifa
                                          ] ;
-                         rdfs:comment "Bienes culturas que son inamovibles en lo que respecta a su ubicación geográfica."@es ;
+                         owl:disjointWith tcm:BienCulturalMueble ;
+                         rdfs:comment "Bienes culturales que son inamovibles en lo que respecta a su ubicación geográfica."@es ;
                          rdfs:label "Bien Cultural Inmueble" .
 
 
@@ -426,6 +548,7 @@ tcm:InstrumentoCientíficoTécnico rdf:type owl:Class ;
 ###  https://ontologia.segittur.es/turismo/def/turismo-cultural-material/InstrumentoEléctrico
 tcm:InstrumentoEléctrico rdf:type owl:Class ;
                          rdfs:subClassOf tcm:InstrumentoCientíficoTécnico ;
+                         owl:disjointWith tcm:InstrumentoNoEléctrico ;
                          rdfs:label "Instrumento Eléctrico" .
 
 
